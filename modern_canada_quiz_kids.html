@@ -81,6 +81,7 @@ button.option:disabled { cursor:default; }
       <div class="options" id="options"></div>
       <div id="feedback" class="feedback"></div>
       <div class="controls">
+        <button class="secondary" onclick="previousQuestion()" id="prevBtn">⬅ Previous</button>
         <button class="secondary" onclick="nextQuestion()" id="nextBtn" disabled>Next ➜</button>
       </div>
     </div>
@@ -118,11 +119,17 @@ function showQuestion(){
   document.getElementById('feedback').className = 'feedback';
   document.getElementById('feedback').textContent = '';
   document.getElementById('nextBtn').disabled = true;
-  item.options.forEach((opt, idx) => {
+  document.getElementById('prevBtn').disabled = current === 0;
+  const shuffledOptions = item.options
+    .map((opt, idx) => ({ text: opt, originalIndex: idx }))
+    .sort(() => Math.random() - 0.5);
+
+  shuffledOptions.forEach((opt, displayIndex) => {
     const btn = document.createElement('button');
     btn.className = 'option';
-    btn.textContent = `${String.fromCharCode(65+idx)}. ${opt}`;
-    btn.onclick = () => chooseAnswer(idx, btn);
+    btn.dataset.originalIndex = opt.originalIndex;
+    btn.textContent = `${String.fromCharCode(65+displayIndex)}. ${opt.text}`;
+    btn.onclick = () => chooseAnswer(opt.originalIndex, btn);
     box.appendChild(btn);
   });
 }
@@ -131,9 +138,9 @@ function chooseAnswer(idx, btn){
   answered = true;
   const item = questions[current];
   const buttons = document.querySelectorAll('.option');
-  buttons.forEach((b,i) => {
+  buttons.forEach((b) => {
     b.disabled = true;
-    if(i === item.answer) b.classList.add('correct');
+    if(Number(b.dataset.originalIndex) === item.answer) b.classList.add('correct');
   });
   const feedback = document.getElementById('feedback');
   if(idx === item.answer){
@@ -143,12 +150,15 @@ function chooseAnswer(idx, btn){
     feedback.className = 'feedback show good';
   } else {
     btn.classList.add('wrong');
-    feedback.textContent = `Good try! The correct answer is ${String.fromCharCode(65+item.answer)}. ${item.options[item.answer]}`;
+    const correctButton = Array.from(buttons).find(b => Number(b.dataset.originalIndex) === item.answer);
+    const correctLetter = correctButton ? correctButton.textContent.split('.')[0] : '';
+    feedback.textContent = `Good try! The correct answer is ${correctLetter}. ${item.options[item.answer]}`;
     feedback.className = 'feedback show bad';
   }
   document.getElementById('score').textContent = `Score: ${score}`;
   document.getElementById('nextBtn').disabled = false;
 }
+
 function nextQuestion(){
   current++;
   if(current >= questions.length){
@@ -156,6 +166,12 @@ function nextQuestion(){
   } else {
     showQuestion();
   }
+}
+
+function previousQuestion(){
+  if(current === 0) return;
+  current--;
+  showQuestion();
 }
 function finishQuiz(){
   document.getElementById('quiz').classList.add('hidden');
