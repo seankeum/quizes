@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modern Canada Quiz</title>
+<style>
+:root {
+  --bg:#fff7df; --card:#ffffff; --ink:#203040; --accent:#ff8f3d; --good:#2fa866; --bad:#e05252; --blue:#4f8cff;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left,#dff4ff,transparent 30%), var(--bg);
+  color:var(--ink);
+}
+header {
+  padding:28px 18px; text-align:center; background:linear-gradient(135deg,#ffcf6e,#ff8f3d);
+  border-bottom:6px solid #ffdca3;
+}
+h1 { margin:0; font-size:clamp(2rem,5vw,3.5rem); }
+.subtitle { font-size:1.1rem; margin-top:8px; font-weight:700; }
+.wrap { max-width:920px; margin:24px auto; padding:0 16px 40px; }
+.panel, .question-card {
+  background:var(--card); border-radius:24px; padding:22px; box-shadow:0 8px 0 rgba(0,0,0,.08), 0 14px 30px rgba(0,0,0,.08);
+  border:3px solid #ffe2ad; margin-bottom:18px;
+}
+.progressbar { height:18px; background:#e9eef7; border-radius:99px; overflow:hidden; border:2px solid #d0d8e8; }
+#bar { height:100%; width:0%; background:linear-gradient(90deg,#4f8cff,#8bd450); transition:.3s; }
+.meta { display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center; font-weight:800; margin-bottom:12px; }
+.question { font-size:1.35rem; font-weight:900; margin:8px 0 18px; }
+.options { display:grid; gap:12px; }
+button.option {
+  text-align:left; border:3px solid #d7e2f5; background:#f8fbff; border-radius:18px; padding:15px 16px;
+  font-size:1rem; font-weight:800; cursor:pointer; transition:transform .08s, background .2s, border .2s;
+}
+button.option:hover { transform:translateY(-2px); border-color:var(--blue); }
+button.option.correct { background:#dcf7e8; border-color:var(--good); }
+button.option.wrong { background:#ffe2e2; border-color:var(--bad); }
+button.option:disabled { cursor:default; }
+.feedback { margin-top:16px; padding:14px; border-radius:16px; font-weight:800; display:none; }
+.feedback.show { display:block; }
+.good { background:#dcf7e8; color:#145c35; }
+.bad { background:#ffe2e2; color:#8d2525; }
+.controls { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+.controls button, .start {
+  border:0; border-radius:999px; padding:14px 22px; font-size:1rem; font-weight:900; cursor:pointer;
+  background:var(--accent); color:#fff; box-shadow:0 5px 0 #c86721;
+}
+.controls button.secondary { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
+.hidden { display:none; }
+.result { text-align:center; }
+.result .score { font-size:3rem; font-weight:1000; color:#ff7a1a; }
+.small { color:#596777; font-weight:700; }
+.emoji { font-size:2.2rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="emoji">🍁🧠✨</div>
+  <h1>Modern Canada Quiz</h1>
+  <div class="subtitle">30 kid-friendly multiple-choice questions</div>
+</header>
+<main class="wrap">
+  <section id="intro" class="panel result">
+    <h2>Ready to play?</h2>
+    <p class="small">Choose an answer, get instant feedback, and see your score at the end.</p>
+    <button class="start" onclick="startQuiz()">Start Quiz</button>
+  </section>
+
+  <section id="quiz" class="hidden">
+    <div class="panel">
+      <div class="meta">
+        <span id="count">Question 1 of 30</span>
+        <span id="score">Score: 0</span>
+      </div>
+      <div class="progressbar"><div id="bar"></div></div>
+    </div>
+    <div class="question-card">
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+      <div id="feedback" class="feedback"></div>
+      <div class="controls">
+        <button class="secondary" onclick="nextQuestion()" id="nextBtn" disabled>Next ➜</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="end" class="panel result hidden">
+    <div class="emoji">🎉</div>
+    <h2>Quiz Complete!</h2>
+    <div class="score" id="finalScore"></div>
+    <p id="message" class="small"></p>
+    <button class="start" onclick="restartQuiz()">Play Again</button>
+  </section>
+</main>
+
+<script>
+const questions = [{"q": "Which event began World War I?", "options": ["Japan bombed Pearl Harbor", "Germany invaded Poland", "Austria-Hungary declared war on Serbia", "Canada joined the United Nations"], "answer": 2}, {"q": "Why was Canada not ready for war at the beginning of World War I?", "options": ["Canada had a small regular army and few volunteers", "Canada had no farms", "Canada was already fighting in Asia", "Canada had no connection to Britain"], "answer": 0}, {"q": "How many First Canadians sailed for England in October 1914?", "options": ["5,000", "100,000", "12,000", "30,000"], "answer": 3}, {"q": "Which battle was one of the worst battles fought by Canadians during World War I?", "options": ["Battle of Passchendaele", "Battle of York", "Battle of Midway", "Battle of Normandy"], "answer": 0}, {"q": "Why was the Battle of Passchendaele especially difficult?", "options": ["It was fought only by airplanes", "It took place in a desert", "The battlefield was full of mud and water", "The soldiers had no uniforms"], "answer": 2}, {"q": "What problem did Prime Minister Robert Borden introduce conscription to solve?", "options": ["A shortage of food", "A shortage of money", "A shortage of ships", "A shortage of soldiers"], "answer": 3}, {"q": "What does conscription mean?", "options": ["Sending supplies overseas", "Being forced to join the army", "Leaving the army early", "Building weapons in factories"], "answer": 1}, {"q": "When did World War I end?", "options": ["September 1, 1939", "May 8, 1945", "November 11, 1918", "July 1, 1867"], "answer": 2}, {"q": "What was Germany ordered to do after World War I?", "options": ["Pay money to the Allied countries", "Join Canada", "Give all its land to Japan", "Stop farming completely"], "answer": 0}, {"q": "Which organization was formed after World War I to help countries solve problems peacefully?", "options": ["Axis Powers", "NATO", "Canadian Pacific Railway", "League of Nations"], "answer": 3}, {"q": "What did Flanders Fields become known as after World War I?", "options": ["A symbol of remembrance for soldiers who died", "A new Canadian province", "A famous Pacific island", "A type of warship"], "answer": 0}, {"q": "Who wrote the poem “In Flanders Fields”?", "options": ["Robert Borden", "Winston Churchill", "John McCrae", "Adolf Hitler"], "answer": 2}, {"q": "What major economic crisis affected Canada in the 1930s?", "options": ["Confederation", "The Great Depression", "The War of 1812", "The Gold Rush"], "answer": 1}, {"q": "Which stock market crash helped begin the Great Depression?", "options": ["London Stock Crash of 1939", "Vancouver Stock Crash of 1945", "Toronto Stock Crash of 1914", "New York Stock Market Crash of 1929"], "answer": 3}, {"q": "What happened to many people during the Great Depression?", "options": ["Canada’s population doubled", "Everyone became wealthy", "Many people lost jobs and homes", "Farming became impossible everywhere"], "answer": 2}, {"q": "What were relief camps?", "options": ["Camps where unemployed men worked for food, shelter, and small pay", "Vacation camps for wealthy families", "Training camps for Olympic athletes", "Military bases in Europe"], "answer": 0}, {"q": "What forms of entertainment became popular during the 1930s?", "options": ["Internet programs and podcasts", "Video games and streaming", "Radio shows and movies", "Smartphone apps"], "answer": 2}, {"q": "What event started World War II in Europe?", "options": ["Germany invaded Poland", "Canada attacked Germany", "Japan surrendered", "Italy left the Axis Powers"], "answer": 0}, {"q": "When did Germany invade Poland?", "options": ["November 11, 1918", "October 29, 1929", "June 6, 1944", "September 1, 1939"], "answer": 3}, {"q": "After Germany invaded Poland, which countries declared war on Germany?", "options": ["Japan and Italy", "Britain and France", "Russia and China", "Canada and the United States"], "answer": 1}, {"q": "Who was the leader of Germany during World War II?", "options": ["Winston Churchill", "Robert Borden", "Adolf Hitler", "Franklin Roosevelt"], "answer": 2}, {"q": "What was D-Day?", "options": ["The day World War I ended", "The start of the Great Depression", "Japan’s attack on Pearl Harbor", "The Allied invasion of Normandy to take back Europe from Germany"], "answer": 3}, {"q": "Which operation helped liberate the Netherlands?", "options": ["Operation Market Garden", "Operation Torch", "Operation Desert Storm", "Operation Maple Leaf"], "answer": 0}, {"q": "What happened at Pearl Harbor on December 7, 1941?", "options": ["Germany surrendered", "Canada declared independence", "Japan bombed the U.S. naval base", "Italy invaded France"], "answer": 2}, {"q": "What caused Japan to surrender in August 1945?", "options": ["The Treaty of Versailles", "The atomic bombing of Hiroshima and Nagasaki", "The Great Depression", "The building of the Canadian Pacific Railway"], "answer": 1}, {"q": "Which countries were part of the Axis Powers during World War II?", "options": ["Canada, Britain, and France", "United States, Canada, and China", "Germany, Italy, and Japan", "Britain, France, and Poland"], "answer": 2}, {"q": "Which side did Canada fight with during World War II?", "options": ["The Axis Powers", "The Allied Powers", "The League of Nations Army", "The Central Powers"], "answer": 1}, {"q": "What does VE Day stand for?", "options": ["Victory in Europe Day", "Veterans’ Election Day", "Volunteer Enlistment Day", "Victory Everywhere Day"], "answer": 0}, {"q": "What was the Holocaust?", "options": ["A Canadian farming program", "A battle fought in the Pacific Ocean", "A peace treaty after World War I", "The mass murder of Jews and other groups by the Nazis"], "answer": 3}, {"q": "Why did many Canadians join the war effort during World War II?", "options": ["To support Canada and the Allied fight against the Axis Powers", "To help Germany win the war", "To end all farming in Canada", "To join the Axis Powers"], "answer": 0}];
+let current = 0;
+let score = 0;
+let answered = false;
+
+function startQuiz(){
+  document.getElementById('intro').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+  showQuestion();
+}
+function showQuestion(){
+  answered = false;
+  const item = questions[current];
+  document.getElementById('count').textContent = `Question ${current+1} of ${questions.length}`;
+  document.getElementById('score').textContent = `Score: ${score}`;
+  document.getElementById('bar').style.width = `${(current/questions.length)*100}%`;
+  document.getElementById('question').textContent = item.q;
+  const box = document.getElementById('options');
+  box.innerHTML = '';
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('feedback').textContent = '';
+  document.getElementById('nextBtn').disabled = true;
+  item.options.forEach((opt, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.textContent = `${String.fromCharCode(65+idx)}. ${opt}`;
+    btn.onclick = () => chooseAnswer(idx, btn);
+    box.appendChild(btn);
+  });
+}
+function chooseAnswer(idx, btn){
+  if(answered) return;
+  answered = true;
+  const item = questions[current];
+  const buttons = document.querySelectorAll('.option');
+  buttons.forEach((b,i) => {
+    b.disabled = true;
+    if(i === item.answer) b.classList.add('correct');
+  });
+  const feedback = document.getElementById('feedback');
+  if(idx === item.answer){
+    score++;
+    btn.classList.add('correct');
+    feedback.textContent = 'Great job! That is correct. 🌟';
+    feedback.className = 'feedback show good';
+  } else {
+    btn.classList.add('wrong');
+    feedback.textContent = `Good try! The correct answer is ${String.fromCharCode(65+item.answer)}. ${item.options[item.answer]}`;
+    feedback.className = 'feedback show bad';
+  }
+  document.getElementById('score').textContent = `Score: ${score}`;
+  document.getElementById('nextBtn').disabled = false;
+}
+function nextQuestion(){
+  current++;
+  if(current >= questions.length){
+    finishQuiz();
+  } else {
+    showQuestion();
+  }
+}
+function finishQuiz(){
+  document.getElementById('quiz').classList.add('hidden');
+  document.getElementById('end').classList.remove('hidden');
+  document.getElementById('bar').style.width = '100%';
+  document.getElementById('finalScore').textContent = `${score} / ${questions.length}`;
+  let msg = score >= 26 ? 'Amazing! You are a Modern Canada master!' :
+            score >= 20 ? 'Nice work! A little review and you will crush it!' :
+            score >= 15 ? 'Good effort! Try again to boost your score.' :
+            'Keep practicing — every try makes you stronger!';
+  document.getElementById('message').textContent = msg;
+}
+function restartQuiz(){
+  current = 0; score = 0;
+  document.getElementById('end').classList.add('hidden');
+  document.getElementById('quiz').classList.remove('hidden');
+  showQuestion();
+}
+</script>
+</body>
+</html>
