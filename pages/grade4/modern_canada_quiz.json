@@ -1,0 +1,159 @@
+{
+  "title": "Modern Canada Quiz",
+  "subtitle": "30 PDF-validated, kid-friendly multiple-choice questions",
+  "emoji": "🍁🧠✨",
+  "introTitle": "Ready to play?",
+  "introText": "Choose an answer, get instant feedback, and see your score at the end.",
+  "questions": [
+    {
+      "question": "How did World War I begin?",
+      "options": ["Germany invaded Poland", "Archduke Franz Ferdinand was murdered by a Serbian", "Japan bombed Pearl Harbour", "Canada declared war on Italy"],
+      "answer": 1
+    },
+    {
+      "question": "Which country did Austria side with at the beginning of World War I?",
+      "options": ["Germany", "Russia", "Serbia", "Canada"],
+      "answer": 0
+    },
+    {
+      "question": "Which country did Serbia side with at the beginning of World War I?",
+      "options": ["Italy", "Japan", "Russia", "Germany"],
+      "answer": 2
+    },
+    {
+      "question": "Why did Britain declare war after Germany invaded Belgium?",
+      "options": ["Britain wanted to conquer Canada", "Britain had promised to defend Belgium’s neutrality", "Britain wanted to join Germany", "Britain was attacked by Japan"],
+      "answer": 1
+    },
+    {
+      "question": "Why did Canada join World War I?",
+      "options": ["Canada joined as part of the Allied forces supporting Britain", "Canada was invaded by Germany", "Canada wanted to attack Serbia", "Canada was ordered by Japan"],
+      "answer": 0
+    },
+    {
+      "question": "How many soldiers did Canada have when it was not yet ready for war?",
+      "options": ["30,000", "625,000", "3,000", "7,000"],
+      "answer": 2
+    },
+    {
+      "question": "How many volunteers were trained within two months?",
+      "options": ["3,000", "30,000", "625,000", "100"],
+      "answer": 1
+    },
+    {
+      "question": "Between 1914 and 1918, how many Canadian men and women were sent to fight the war?",
+      "options": ["625,000", "8 million", "60", "155,000"],
+      "answer": 0
+    },
+    {
+      "question": "Which battle was described as one of the worst battles fought by Canadians and their allies?",
+      "options": ["Battle of Dieppe", "Battle of Ypres", "Battle of Normandy", "Battle of Hong Kong"],
+      "answer": 1
+    },
+    {
+      "question": "What deadly weapon had the Germans begun to use at the Battle of Ypres?",
+      "options": ["Atomic bombs", "Poison gas", "Tanks only", "Rockets"],
+      "answer": 1
+    },
+    {
+      "question": "What did Canadians do when French troops retreated at Ypres?",
+      "options": ["They held the French line until Allied reinforcements came", "They surrendered immediately", "They left Europe", "They joined Germany"],
+      "answer": 0
+    },
+    {
+      "question": "What happened at Vimy Ridge on April 9, 1917?",
+      "options": ["Canada lost control of the ridge", "Four divisions of the Canadian Corps captured it from the Germans", "Japan attacked Canada", "Germany surrendered"],
+      "answer": 1
+    },
+    {
+      "question": "What is conscription?",
+      "options": ["Forcing men to join the army", "Sending money to farmers", "A peace treaty", "A type of radio show"],
+      "answer": 0
+    },
+    {
+      "question": "Why did farmers oppose conscription?",
+      "options": ["They did not want their sons taken away from working on farms", "They wanted Germany to win", "They wanted to leave Canada", "They were against radios"],
+      "answer": 0
+    },
+    {
+      "question": "Why were Quakers and Mennonites against conscription?",
+      "options": ["They believed war was evil", "They wanted more taxes", "They were not Canadian", "They wanted to join the navy"],
+      "answer": 0
+    },
+    {
+      "question": "When did World War I end?",
+      "options": ["September 1, 1939", "November 11, 1918", "June 6, 1944", "August 10, 1945"],
+      "answer": 1
+    },
+    {
+      "question": "What peacekeeping force did Canada join after World War I?",
+      "options": ["League of Nations", "Rome-Berlin Axis", "Nazi Reich", "CBC"],
+      "answer": 0
+    },
+    {
+      "question": "Who wrote “In Flanders Fields”?",
+      "options": ["Robert Borden", "Winston Churchill", "John McCrae", "Benito Mussolini"],
+      "answer": 2
+    },
+    {
+      "question": "What did historians call the 1920s?",
+      "options": ["The Quiet Years", "The Roaring Twenties", "The War Years", "The Dusty Decade"],
+      "answer": 1
+    },
+    {
+      "question": "What was the Great Depression?",
+      "options": ["A severe economic decline", "A military battle", "A new airplane company", "A poem"],
+      "answer": 0
+    },
+    {
+      "question": "What event helped cause the Great Depression?",
+      "options": ["The New York Stock Market Crash in October 1929", "The bombing of Pearl Harbour", "D-Day", "The Battle of Ypres"],
+      "answer": 0
+    },
+    {
+      "question": "What percent of the population did not have jobs by 1933?",
+      "options": ["10%", "30%", "75%", "90%"],
+      "answer": 1
+    },
+    {
+      "question": "What did Alberta and Saskatchewan suffer from at the same time as the Great Depression?",
+      "options": ["A severe drought", "A flood", "An invasion", "A gold rush"],
+      "answer": 0
+    },
+    {
+      "question": "What became a favourite pastime of many housewives during the Depression?",
+      "options": ["Window shopping", "Flying airplanes", "Joining the army", "Building ships"],
+      "answer": 0
+    },
+    {
+      "question": "What form of entertainment became very popular during the Depression?",
+      "options": ["Radio shows", "Video games", "Internet videos", "Smartphones"],
+      "answer": 0
+    },
+    {
+      "question": "What two famous Canadian companies were started during the Great Depression?",
+      "options": ["CBC and Trans-Canada Airline / Air Canada", "Hudson’s Bay and Canadian Tire", "CN Tower and VIA Rail", "NATO and League of Nations"],
+      "answer": 0
+    },
+    {
+      "question": "Who was the leader of Italy before World War II?",
+      "options": ["Benito Mussolini", "Adolf Hitler", "Joseph Stalin", "Winston Churchill"],
+      "answer": 0
+    },
+    {
+      "question": "Who became dictator of Germany?",
+      "options": ["Benito Mussolini", "Adolf Hitler", "Theodore Roosevelt", "Robert Borden"],
+      "answer": 1
+    },
+    {
+      "question": "What was the purpose of the Treaty of Versailles, according to the PDF?",
+      "options": ["To prevent Germany from ever starting another war", "To help Germany invade Poland", "To create Canada", "To start the CBC"],
+      "answer": 0
+    },
+    {
+      "question": "What two Japanese cities were attacked with atomic bombs by the USA?",
+      "options": ["Tokyo and Kyoto", "Hiroshima and Nagasaki", "Osaka and Kobe", "Sapporo and Yokohama"],
+      "answer": 1
+    }
+  ]
+}
