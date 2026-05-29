@@ -56,6 +56,13 @@ test("pages index lists available quizzes instead of redirecting immediately", a
   assert.match(pagesIndex, /href="grade4\/modern_canada_quiz\.html"/);
 });
 
+test("repository root redirects to the pages quiz index", async () => {
+  const rootIndex = await readText("index.html");
+
+  assert.match(rootIndex, /pages\/index\.html/);
+  assert.doesNotMatch(rootIndex, /README/);
+});
+
 test("published quiz template links back to the home page", async () => {
   const template = await readText("pages/quiz-template.html");
 

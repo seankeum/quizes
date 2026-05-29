@@ -39,3 +39,4 @@ The site is published from the `/pages` folder by `.github/workflows/pages.yml`.
 In the GitHub repository settings, set Pages to use **GitHub Actions** as the source.
 
 Work directly in `pages/` when adding or editing quizzes. The published entry point is `pages/index.html`, which lists the available quizzes.
+The repository root also has a small `index.html` redirect so branch-root Pages settings do not show this README as the landing page.
