@@ -7,6 +7,7 @@ const quizPath = new URL("../pages/grade4/modern_canada_quiz.json", import.meta.
 const healthQuizPath = new URL("../pages/grade4/exercise_healthy_body_quiz.json", import.meta.url);
 const healthQuizShimPath = new URL("../pages/grade4/exercise_healthy_body_quiz.html", import.meta.url);
 const indexPath = new URL("../pages/index.html", import.meta.url);
+const quizIndexPath = new URL("../pages/quizzes.json", import.meta.url);
 
 test("quiz template loads questions from external JSON instead of hardcoding them", async () => {
   const template = await readFile(templatePath, "utf8");
@@ -37,10 +38,11 @@ test("modern Canada quiz JSON has valid metadata and answer keys", async () => {
 });
 
 test("exercise for a healthy body quiz is linked and has PDF-validated answer keys", async () => {
-  const [quiz, shim, index] = await Promise.all([
+  const [quiz, shim, index, quizIndex] = await Promise.all([
     readFile(healthQuizPath, "utf8").then(JSON.parse),
     readFile(healthQuizShimPath, "utf8"),
     readFile(indexPath, "utf8"),
+    readFile(quizIndexPath, "utf8").then(JSON.parse),
   ]);
 
   assert.equal(quiz.title, "Exercise for a Healthy Body Quiz");
@@ -65,5 +67,11 @@ test("exercise for a healthy body quiz is linked and has PDF-validated answer ke
   }
 
   assert.match(shim, /quiz-template\.html\?quiz=grade4\/exercise_healthy_body_quiz\.json/);
-  assert.match(index, /exercise_healthy_body_quiz\.html/);
+  assert.match(index, /fetch\(["']quizzes\.json["']\)/);
+  assert.ok(
+    quizIndex.sections.some((section) =>
+      section.quizzes.some((item) => item.href === "grade4/exercise_healthy_body_quiz.html")
+    ),
+    "quiz index links the exercise for a healthy body quiz",
+  );
 });

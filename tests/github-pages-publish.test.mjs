@@ -30,30 +30,38 @@ test("GitHub Pages deploys the pages folder", async () => {
 test("pages folder contains the static quiz entry points and data", async () => {
   const [
     pagesIndex,
+    quizIndex,
     publishedQuizPage,
     publishedTemplate,
     publishedData,
   ] = await Promise.all([
     readText("pages/index.html"),
+    readText("pages/quizzes.json"),
     readText("pages/grade4/modern_canada_quiz.html"),
     readText("pages/quiz-template.html"),
     readText("pages/grade4/modern_canada_quiz.json"),
   ]);
 
-  assert.match(pagesIndex, /grade4\/modern_canada_quiz\.html/);
+  const quizzes = JSON.parse(quizIndex);
+
+  assert.match(pagesIndex, /fetch\(["']quizzes\.json["']\)/);
+  assert.equal(Array.isArray(quizzes.sections), true);
+  assert.equal(quizzes.sections[0].quizzes[0].href, "grade4/modern_canada_quiz.html");
   assert.match(publishedQuizPage, /\.\.\/quiz-template\.html\?quiz=grade4\/modern_canada_quiz\.json/);
   assert.match(publishedTemplate, /Back to home/);
   assert.equal(JSON.parse(publishedData).title, "Modern Canada Quiz");
 });
 
-test("pages index lists available quizzes instead of redirecting immediately", async () => {
+test("pages index renders available quizzes from JSON instead of hardcoded cards", async () => {
   const pagesIndex = await readText("pages/index.html");
 
   assert.doesNotMatch(pagesIndex, /http-equiv="refresh"/i);
   assert.doesNotMatch(pagesIndex, /window\.location\.replace/);
   assert.match(pagesIndex, /Available Quizzes/);
-  assert.match(pagesIndex, /Modern Canada Quiz/);
-  assert.match(pagesIndex, /href="grade4\/modern_canada_quiz\.html"/);
+  assert.match(pagesIndex, /fetch\(["']quizzes\.json["']\)/);
+  assert.match(pagesIndex, /id="quizSections"/);
+  assert.doesNotMatch(pagesIndex, /href="grade4\/modern_canada_quiz\.html"/);
+  assert.doesNotMatch(pagesIndex, /href="grade4\/exercise_healthy_body_quiz\.html"/);
 });
 
 test("repository root redirects to the pages quiz index", async () => {

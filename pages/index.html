@@ -89,6 +89,14 @@ h2 {
   color: var(--accent);
   font-weight: 950;
 }
+.notice {
+  padding: 20px;
+  color: var(--muted);
+  font-weight: 800;
+  background: var(--card);
+  border: 3px solid #ffe2ad;
+  border-radius: 20px;
+}
 </style>
 </head>
 <body>
@@ -96,26 +104,82 @@ h2 {
   <h1>Available Quizzes</h1>
   <div class="subtitle">Choose a quiz to start.</div>
 </header>
-<main>
-  <section class="quiz-section" aria-labelledby="grade4-heading">
-    <h2 id="grade4-heading">Grade 4</h2>
-    <ul class="quiz-list">
-      <li>
-        <a class="quiz-link" href="grade4/modern_canada_quiz.html">
-          <span class="quiz-title">Modern Canada Quiz</span>
-          <span class="quiz-meta">30 kid-friendly multiple-choice questions</span>
-          <span class="start-label">Start quiz</span>
-        </a>
-      </li>
-      <li>
-        <a class="quiz-link" href="grade4/exercise_healthy_body_quiz.html">
-          <span class="quiz-title">Exercise for a Healthy Body Quiz</span>
-          <span class="quiz-meta">30 PDF-validated multiple-choice questions</span>
-          <span class="start-label">Start quiz</span>
-        </a>
-      </li>
-    </ul>
+<main id="quizSections">
+  <section class="quiz-section">
+    <p class="notice">Loading quizzes...</p>
   </section>
 </main>
+<script>
+loadQuizIndex();
+
+async function loadQuizIndex() {
+  const container = document.getElementById('quizSections');
+
+  try {
+    const response = await fetch("quizzes.json");
+    if (!response.ok) throw new Error('Could not load quizzes.json');
+    const data = await response.json();
+    validateQuizIndex(data);
+    renderQuizIndex(data.sections, container);
+  } catch (error) {
+    container.innerHTML = '';
+    const notice = document.createElement('p');
+    notice.className = 'notice';
+    notice.textContent = error.message;
+    container.appendChild(notice);
+  }
+}
+
+function validateQuizIndex(data) {
+  if (!data || !Array.isArray(data.sections)) {
+    throw new Error('Quiz index must include sections.');
+  }
+}
+
+function renderQuizIndex(sections, container) {
+  container.innerHTML = '';
+
+  sections.forEach((section, sectionIndex) => {
+    const headingId = `quiz-section-${sectionIndex + 1}`;
+    const sectionEl = document.createElement('section');
+    sectionEl.className = 'quiz-section';
+    sectionEl.setAttribute('aria-labelledby', headingId);
+
+    const heading = document.createElement('h2');
+    heading.id = headingId;
+    heading.textContent = section.heading;
+    sectionEl.appendChild(heading);
+
+    const list = document.createElement('ul');
+    list.className = 'quiz-list';
+
+    section.quizzes.forEach((quiz) => {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.className = 'quiz-link';
+      link.href = quiz.href;
+
+      const title = document.createElement('span');
+      title.className = 'quiz-title';
+      title.textContent = quiz.title;
+
+      const meta = document.createElement('span');
+      meta.className = 'quiz-meta';
+      meta.textContent = quiz.meta;
+
+      const start = document.createElement('span');
+      start.className = 'start-label';
+      start.textContent = 'Start quiz';
+
+      link.append(title, meta, start);
+      item.appendChild(link);
+      list.appendChild(item);
+    });
+
+    sectionEl.appendChild(list);
+    container.appendChild(sectionEl);
+  });
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "heading": "Grade 4",
+      "quizzes": [
+        {
+          "title": "Modern Canada Quiz",
+          "meta": "30 kid-friendly multiple-choice questions",
+          "href": "grade4/modern_canada_quiz.html"
+        },
+        {
+          "title": "Exercise for a Healthy Body Quiz",
+          "meta": "30 PDF-validated multiple-choice questions",
+          "href": "grade4/exercise_healthy_body_quiz.html"
+        }
+      ]
+    }
+  ]
+}
