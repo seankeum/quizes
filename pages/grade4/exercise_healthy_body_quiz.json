@@ -1,0 +1,219 @@
+{
+  "title": "Exercise for a Healthy Body Quiz",
+  "subtitle": "30 PDF-validated multiple-choice questions from Chapter 6 terms and comprehension checks",
+  "emoji": "💪🦴🧠",
+  "introTitle": "Ready to review Chapter 6?",
+  "introText": "Choose the best answer. These questions focus on the bold terms and comprehension check ideas from the PDF.",
+  "questions": [
+    {
+      "question": "What is the skeleton?",
+      "options": ["The body's framework of bones", "The muscles that move food through the body", "A nutrient used to repair muscles", "A warm-up before exercise"],
+      "answer": 0,
+      "sourcePrintedPage": 112,
+      "sourceNote": "Terms box defines skeleton as the body's framework of bones."
+    },
+    {
+      "question": "What does the skeletal system do?",
+      "options": ["Makes blood cells and stores minerals", "Moves food, liquids, and blood automatically", "Only controls facial expressions", "Pumps blood through the body"],
+      "answer": 0,
+      "sourcePrintedPage": 112,
+      "sourceNote": "Terms box defines skeletal system as bones that make blood cells and store minerals."
+    },
+    {
+      "question": "How many bones does an adult body have?",
+      "options": ["106", "206", "216", "602"],
+      "answer": 1,
+      "sourcePrintedPage": 119,
+      "sourceNote": "Comprehension Check 6.1 asks for the adult body's bone count."
+    },
+    {
+      "question": "Your collarbone is your what?",
+      "options": ["Clavicle", "Femur", "Scapula", "Sternum"],
+      "answer": 0,
+      "sourcePrintedPage": 119,
+      "sourceNote": "Comprehension Check 6.1 connects collarbone with clavicle."
+    },
+    {
+      "question": "What protects your heart and lungs?",
+      "options": ["Pelvis", "Rib cage", "Skull", "Vertebrae"],
+      "answer": 1,
+      "sourcePrintedPage": 119,
+      "sourceNote": "Comprehension Check 6.1 identifies the rib cage as protecting the heart and lungs."
+    },
+    {
+      "question": "Which part of the skull covers the brain?",
+      "options": ["Clavicle", "Cranium", "Facial bone", "Jaw bone"],
+      "answer": 1,
+      "sourcePrintedPage": 117,
+      "sourceNote": "The skull section explains that the cranium is the skull part covering the brain."
+    },
+    {
+      "question": "What is the longest bone in the body?",
+      "options": ["Femur", "Humerus", "Patella", "Scapula"],
+      "answer": 0,
+      "sourcePrintedPage": 119,
+      "sourceNote": "Comprehension Check 6.1 asks for the longest bone in the body."
+    },
+    {
+      "question": "What is a ligament?",
+      "options": ["A band of tissue that connects bone to bone", "A bone in the upper leg", "A muscle pair in the upper arm", "A nutrient that repairs muscles"],
+      "answer": 0,
+      "sourcePrintedPage": 112,
+      "sourceNote": "Terms box defines ligament as tissue that connects bone to bone and stabilizes joints."
+    },
+    {
+      "question": "Which joint enables back-and-forth movement like a door?",
+      "options": ["Ball-and-socket joint", "Hinge joint", "Immovable joint", "Pivot joint"],
+      "answer": 1,
+      "sourcePrintedPage": 116,
+      "sourceNote": "Designer Joints compares hinge joints to a door swinging back and forth."
+    },
+    {
+      "question": "Rotational movement is made possible by which joint?",
+      "options": ["Ball-and-socket", "Hinge", "Immovable", "Pivot"],
+      "answer": 3,
+      "sourcePrintedPage": 119,
+      "sourceNote": "Comprehension Check 6.1 asks which joint makes rotational movement possible."
+    },
+    {
+      "question": "What kind of joint allows movement in many directions?",
+      "options": ["Ball-and-socket joint", "Hinge joint", "Immovable joint", "Pivot joint"],
+      "answer": 0,
+      "sourcePrintedPage": 112,
+      "sourceNote": "Terms box defines a ball-and-socket joint as enabling movement in all directions."
+    },
+    {
+      "question": "Why can hips move forward, backward, and to the side while knees mostly bend up and down?",
+      "options": ["Hips are ball-and-socket joints, while knees are hinge joints", "Hips are hinge joints, while knees are pivot joints", "Hips are immovable, while knees are ball-and-socket joints", "Both are the same type of joint"],
+      "answer": 0,
+      "sourcePrintedPage": 120,
+      "sourceNote": "The joint identification page asks students to explain hip and knee movement differences."
+    },
+    {
+      "question": "What is the muscular system?",
+      "options": ["The body system that provides movement", "The body system of bones that stores minerals", "The framework of bones", "The band that connects bone to bone"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines muscular system as the body system which provides movement."
+    },
+    {
+      "question": "What are voluntary muscles?",
+      "options": ["Skeletal muscles that move when you want them to move", "Muscles that work automatically without thinking", "Only the heart muscle", "Only smooth muscles in the stomach"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines voluntary muscles as skeletal muscles that move when you want them to move."
+    },
+    {
+      "question": "What are involuntary muscles?",
+      "options": ["Muscles that work automatically without your thinking about them", "Muscles that only move bones when you choose", "The long bones in the upper leg", "The bones in fingers, thumbs, and toes"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines involuntary muscles as muscles that work automatically."
+    },
+    {
+      "question": "Which pair lists examples of involuntary muscles from the book?",
+      "options": ["Cardiac muscle and smooth muscle", "Biceps and triceps", "Quadriceps and hamstrings", "Trapezius and abdominal muscles"],
+      "answer": 0,
+      "sourcePrintedPage": 126,
+      "sourceNote": "The involuntary muscles section identifies cardiac muscle and smooth muscle."
+    },
+    {
+      "question": "What connects most skeletal muscles to bones?",
+      "options": ["Tendons", "Ligaments", "Phalanges", "Vertebrae"],
+      "answer": 0,
+      "sourcePrintedPage": 127,
+      "sourceNote": "Comprehension Check 6.2 asks what connects muscles to bones."
+    },
+    {
+      "question": "Which nutrient is needed to grow and repair muscles?",
+      "options": ["Protein", "Yellow marrow", "Spongy bone", "Calcium only"],
+      "answer": 0,
+      "sourcePrintedPage": 127,
+      "sourceNote": "Comprehension Check 6.2 asks for the nutrient needed to grow and repair muscles."
+    },
+    {
+      "question": "How do most skeletal muscles work together?",
+      "options": ["In pairs", "Only alone", "Only while sleeping", "Only without nerves"],
+      "answer": 0,
+      "sourcePrintedPage": 127,
+      "sourceNote": "Comprehension Check 6.2 asks how muscles work together."
+    },
+    {
+      "question": "What motion do muscles use to do work?",
+      "options": ["Pulling", "Pushing", "Floating", "Twisting only"],
+      "answer": 0,
+      "sourcePrintedPage": 127,
+      "sourceNote": "Comprehension Check 6.2 asks which motion muscles use to do work."
+    },
+    {
+      "question": "What is the muscle pair of the upper arm?",
+      "options": ["Biceps and triceps", "Quadriceps and hamstrings", "Abdominal muscles and trapezius", "Cardiac and smooth muscles"],
+      "answer": 0,
+      "sourcePrintedPage": 127,
+      "sourceNote": "Comprehension Check 6.2 asks for the pair of upper arm muscles."
+    },
+    {
+      "question": "Which muscle helps move the scapula?",
+      "options": ["Trapezius", "Patella", "Cranium", "Phalanges"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines trapezius as the muscle that helps move the scapula."
+    },
+    {
+      "question": "What do abdominal muscles do?",
+      "options": ["Cover the abdomen", "Connect bone to bone", "Form the kneecap", "Store minerals in bones"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines abdominal muscles as muscles that cover the abdomen."
+    },
+    {
+      "question": "Which muscles are in the upper leg?",
+      "options": ["Quadriceps and hamstrings", "Biceps and triceps", "Cardiac and smooth muscles", "Facial muscles and jaw bone"],
+      "answer": 0,
+      "sourcePrintedPage": 121,
+      "sourceNote": "Terms box defines quadriceps and hamstring as muscles of the upper leg."
+    },
+    {
+      "question": "According to the posture section, correct posture should feel how?",
+      "options": ["Comfortable", "Stiff and rigid", "Painful", "Crooked"],
+      "answer": 0,
+      "sourcePrintedPage": 133,
+      "sourceNote": "Comprehension Check 6.3 says correct posture should be comfortable."
+    },
+    {
+      "question": "For correct alignment, which direction should your toes point?",
+      "options": ["Forward", "Outward", "Inward", "Backward"],
+      "answer": 0,
+      "sourcePrintedPage": 133,
+      "sourceNote": "Comprehension Check 6.3 corrects outward to forward for toe alignment."
+    },
+    {
+      "question": "Which order matches the steps of exercising shown in the review?",
+      "options": ["Warm up, stretch, exercise, cool down", "Exercise, cool down, stretch, warm up", "Stretch, cool down, warm up, exercise", "Cool down, exercise, warm up, stretch"],
+      "answer": 0,
+      "sourcePrintedPage": 139,
+      "sourceNote": "Concepts Review 6.3 asks for the steps of exercising in order."
+    },
+    {
+      "question": "What is aerobic exercise?",
+      "options": ["Endurance exercise that causes muscles to use more oxygen", "Exercise that never uses oxygen", "Only stop-and-go strength activity", "Only a type of joint movement"],
+      "answer": 0,
+      "sourcePrintedPage": 128,
+      "sourceNote": "Terms box defines aerobic exercise as endurance exercise that causes muscles to use more oxygen."
+    },
+    {
+      "question": "What is anaerobic exercise?",
+      "options": ["Exercise requiring strength and agility rather than endurance", "Endurance exercise that mainly benefits the heart and lungs", "A cooldown stretch for the neck", "A bone that protects the brain"],
+      "answer": 0,
+      "sourcePrintedPage": 128,
+      "sourceNote": "Terms box defines anaerobic exercise as strength and agility exercise rather than endurance."
+    },
+    {
+      "question": "What returns to normal during a cooldown?",
+      "options": ["Heart rate, breathing, and body temperature", "Bone marrow and minerals", "Only arm muscles", "The number of bones in the body"],
+      "answer": 0,
+      "sourcePrintedPage": 133,
+      "sourceNote": "Comprehension Check 6.3 says heart rate, breathing, and body temperature return to normal during cooldown."
+    }
+  ]
+}
