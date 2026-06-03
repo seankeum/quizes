@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable Quiz</title>
+<style>
+:root {
+  --ink:#1f2933;
+  --muted:#64748b;
+  --rule:#cbd5e1;
+  --soft:#f8fafc;
+  --accent:#f97316;
+  --error:#991b1b;
+  --error-bg:#fee2e2;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  background:#e2e8f0;
+  color:var(--ink);
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.35;
+}
+.screen-bar {
+  position:sticky;
+  top:0;
+  z-index:2;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  padding:14px;
+  background:#111827;
+  color:white;
+}
+.screen-bar button,
+.screen-bar a {
+  display:inline-flex;
+  align-items:center;
+  min-height:40px;
+  border:0;
+  border-radius:8px;
+  padding:0 14px;
+  font-weight:700;
+  font-size:14px;
+  text-decoration:none;
+  background:var(--accent);
+  color:white;
+  cursor:pointer;
+}
+.screen-bar a {
+  background:#334155;
+}
+.page {
+  width:min(8.5in, calc(100vw - 24px));
+  min-height:11in;
+  margin:24px auto;
+  padding:clamp(24px, 7vw, .62in) clamp(18px, 7vw, .68in);
+  background:white;
+  box-shadow:0 18px 50px rgba(15, 23, 42, .22);
+}
+.header {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:18px;
+  align-items:end;
+  padding-bottom:18px;
+  border-bottom:3px solid var(--ink);
+}
+h1 {
+  margin:0 0 4px;
+  font-size:28px;
+  line-height:1.05;
+}
+.subtitle {
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:700;
+}
+.student-lines {
+  min-width:2.45in;
+  font-size:11px;
+  color:var(--muted);
+}
+.line {
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:8px;
+  align-items:end;
+  margin-top:9px;
+}
+.line span:last-child {
+  border-bottom:1px solid var(--ink);
+  min-height:15px;
+}
+.instructions {
+  margin:16px 0;
+  padding:10px 12px;
+  border:1px solid var(--rule);
+  background:var(--soft);
+  border-radius:6px;
+  font-size:12px;
+  color:#334155;
+}
+.questions {
+  display:grid;
+  gap:13px;
+}
+.question {
+  break-inside:avoid;
+  page-break-inside:avoid;
+  padding-bottom:11px;
+  border-bottom:1px solid #e2e8f0;
+}
+.question-title {
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:6px;
+  margin-bottom:7px;
+  font-weight:800;
+  font-size:14px;
+}
+.number {
+  color:var(--accent);
+}
+.options {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px 16px;
+  padding-left:34px;
+  font-size:12px;
+}
+.option {
+  display:grid;
+  grid-template-columns:20px 1fr;
+  gap:5px;
+}
+.answer-key h2 {
+  margin:0 0 6px;
+  font-size:26px;
+  line-height:1.1;
+}
+.answer-key .subtitle {
+  margin-bottom:20px;
+}
+.answer-grid {
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:10px;
+  font-size:13px;
+}
+.answer {
+  padding:9px 6px;
+  text-align:center;
+  background:var(--soft);
+  border:1px solid var(--rule);
+  border-radius:6px;
+  font-weight:800;
+}
+.hidden {
+  display:none;
+}
+.error {
+  max-width:720px;
+  margin:24px auto;
+  padding:16px;
+  border-radius:8px;
+  background:var(--error-bg);
+  color:var(--error);
+  font-weight:700;
+}
+@page {
+  size:letter;
+  margin:.45in;
+}
+@media print {
+  body { background:white; }
+  .screen-bar { display:none; }
+  .page {
+    width:auto;
+    min-height:auto;
+    margin:0;
+    padding:0;
+    box-shadow:none;
+  }
+  .answer-page {
+    break-before:page;
+    page-break-before:always;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header {
+    grid-template-columns:1fr;
+  }
+  .student-lines {
+    min-width:0;
+  }
+  .options {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+<body>
+<div class="screen-bar">
+  <button onclick="window.print()">Preview / Save as PDF</button>
+  <a id="quizLink" href="quiz-template.html">Back to quiz</a>
+</div>
+<div class="error hidden" id="loadError"></div>
+
+<main class="page" id="questionPage">
+  <header class="header">
+    <div>
+      <h1 id="title">Loading Quiz...</h1>
+      <p class="subtitle" id="subtitle">Printable question sheet</p>
+    </div>
+    <div class="student-lines">
+      <div class="line"><span>Name</span><span></span></div>
+      <div class="line"><span>Date</span><span></span></div>
+    </div>
+  </header>
+
+  <section class="instructions">
+    Circle the best answer for each question. Each question has one correct answer.
+  </section>
+
+  <section class="questions" id="questions"></section>
+</main>
+
+<section class="page answer-page hidden" id="answerKey">
+  <div class="answer-key">
+    <h2>Answer Key</h2>
+    <p class="subtitle" id="answerSubtitle">Teacher copy</p>
+    <div class="answer-grid" id="answers"></div>
+  </div>
+</section>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const quizFile = params.get('quiz') || 'grade4/modern_canada_quiz.json';
+const includeAnswers = params.get('answers') === '1';
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+document.getElementById('quizLink').href = `quiz-template.html?quiz=${encodeURIComponent(quizFile)}`;
+loadPrintableQuiz(quizFile);
+
+async function loadPrintableQuiz(fileName){
+  try {
+    const response = await fetch(fileName);
+    if(!response.ok) throw new Error(`Could not load ${fileName}`);
+    const quiz = await response.json();
+    validateQuiz(quiz);
+    renderQuiz(quiz);
+  } catch (error) {
+    showError(error);
+  }
+}
+
+function validateQuiz(quiz){
+  if(!quiz || typeof quiz.title !== 'string' || typeof quiz.subtitle !== 'string' || !Array.isArray(quiz.questions)){
+    throw new Error('Quiz JSON must include title, subtitle, and questions.');
+  }
+  quiz.questions.forEach((item, index) => {
+    if(typeof item.question !== 'string' || !Array.isArray(item.options) || !Number.isInteger(item.answer)){
+      throw new Error(`Question ${index + 1} is missing question, options, or answer.`);
+    }
+    if(item.answer < 0 || item.answer >= item.options.length){
+      throw new Error(`Question ${index + 1} has an answer outside its options.`);
+    }
+  });
+}
+
+function renderQuiz(quiz){
+  document.title = `${quiz.title} Printable PDF`;
+  document.getElementById('title').textContent = quiz.title;
+  document.getElementById('subtitle').textContent = `Printable question sheet - ${quiz.questions.length} multiple-choice questions`;
+  document.getElementById('questions').replaceChildren(...quiz.questions.map(renderQuestion));
+  document.getElementById('answerSubtitle').textContent = `${quiz.title} - Teacher copy`;
+
+  if(includeAnswers){
+    document.getElementById('answers').replaceChildren(...quiz.questions.map(renderAnswer));
+    document.getElementById('answerKey').classList.remove('hidden');
+  }
+}
+
+function renderQuestion(item, index){
+  const article = document.createElement('article');
+  article.className = 'question';
+  const title = document.createElement('div');
+  title.className = 'question-title';
+  title.innerHTML = `<span class="number">${index + 1}.</span><span></span>`;
+  title.lastElementChild.textContent = item.question;
+
+  const options = document.createElement('div');
+  options.className = 'options';
+  item.options.forEach((option, optionIndex) => {
+    const optionNode = document.createElement('div');
+    optionNode.className = 'option';
+    optionNode.innerHTML = `<strong>${letters[optionIndex]}.</strong><span></span>`;
+    optionNode.lastElementChild.textContent = option;
+    options.appendChild(optionNode);
+  });
+
+  article.append(title, options);
+  return article;
+}
+
+function renderAnswer(item, index){
+  const answer = document.createElement('div');
+  answer.className = 'answer';
+  answer.textContent = `${index + 1}. ${letters[item.answer]}`;
+  return answer;
+}
+
+function showError(error){
+  document.getElementById('questionPage').classList.add('hidden');
+  document.getElementById('answerKey').classList.add('hidden');
+  const errorBox = document.getElementById('loadError');
+  errorBox.textContent = error.message;
+  errorBox.classList.remove('hidden');
+}
+</script>
+</body>
+</html>

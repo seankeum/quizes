@@ -48,11 +48,21 @@ button.option:disabled { cursor:default; }
 .feedback.show { display:block; }
 .good { background:#dcf7e8; color:#145c35; }
 .bad { background:#ffe2e2; color:#8d2525; }
-.controls { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
-.controls button, .start {
+.controls, .intro-actions, .pdf-actions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+.intro-actions { align-items:center; }
+.pdf-actions { margin-top:0; }
+.controls button, .start, .pdf-link {
   border:0; border-radius:999px; padding:14px 22px; font-size:1rem; font-weight:900; cursor:pointer;
   background:var(--accent); color:#fff; box-shadow:0 5px 0 #c86721;
 }
+.pdf-link {
+  display:inline-flex; align-items:center; justify-content:center; text-decoration:none;
+}
+.pdf-link.questions { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
+.pdf-link.answers {
+  background:#f8fbff; color:var(--ink); border:3px solid #d7e2f5; box-shadow:0 5px 0 #cbd5e1;
+}
+.pdf-link:hover, .pdf-link:focus { transform:translateY(-2px); outline:none; }
 .controls button.secondary { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
 .controls button:disabled, .start:disabled {
   cursor:not-allowed; filter:grayscale(.3); opacity:.65;
@@ -76,7 +86,13 @@ button.option:disabled { cursor:default; }
   <section id="intro" class="panel result">
     <h2 id="introTitle">Ready to play?</h2>
     <p class="small" id="introText">Choose an answer, get instant feedback, and see your score at the end.</p>
-    <button class="start" id="startBtn" onclick="startQuiz()" disabled>Start Quiz</button>
+    <div class="intro-actions">
+      <button class="start" id="startBtn" onclick="startQuiz()" disabled>Start Quiz</button>
+      <div class="pdf-actions hidden" id="pdfActions" aria-label="Printable quiz exports">
+        <a class="pdf-link questions" id="questionsPdfLink" href="print-quiz.html?quiz=modern_canada_quiz.json">Print Questions PDF</a>
+        <a class="pdf-link answers" id="answerKeyPdfLink" href="print-quiz.html?quiz=modern_canada_quiz.json&answers=1">Answer Key PDF</a>
+      </div>
+    </div>
   </section>
 
   <section id="quiz" class="hidden">
@@ -136,9 +152,19 @@ async function loadQuiz(fileName){
     document.getElementById('introTitle').textContent = quiz.introTitle || 'Ready to play?';
     document.getElementById('introText').textContent = quiz.introText || 'Choose an answer, get instant feedback, and see your score at the end.';
     document.getElementById('startBtn').disabled = false;
+    setPdfLinks(fileName);
   } catch (error) {
     showLoadError(error);
   }
+}
+
+function setPdfLinks(fileName){
+  const encodedQuizFile = encodeURIComponent(fileName);
+  const questionsUrl = `print-quiz.html?quiz=${encodedQuizFile}`;
+  const answerKeyUrl = `${questionsUrl}&answers=1`;
+  document.getElementById('questionsPdfLink').href = questionsUrl;
+  document.getElementById('answerKeyPdfLink').href = answerKeyUrl;
+  document.getElementById('pdfActions').classList.remove('hidden');
 }
 
 function validateQuiz(quiz){

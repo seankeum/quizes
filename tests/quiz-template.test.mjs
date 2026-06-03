@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const templatePath = new URL("../pages/quiz-template.html", import.meta.url);
+const printTemplatePath = new URL("../pages/print-quiz.html", import.meta.url);
 const quizPath = new URL("../pages/grade4/modern_canada_quiz.json", import.meta.url);
 const healthQuizPath = new URL("../pages/grade4/exercise_healthy_body_quiz.json", import.meta.url);
 const healthQuizShimPath = new URL("../pages/grade4/exercise_healthy_body_quiz.html", import.meta.url);
@@ -15,6 +16,36 @@ test("quiz template loads questions from external JSON instead of hardcoding the
   assert.match(template, /fetch\s*\(/);
   assert.doesNotMatch(template, /const\s+questions\s*=\s*\[/);
   assert.match(template, /modern_canada_quiz\.json/);
+});
+
+test("quiz template exposes printable PDF links for the loaded quiz", async () => {
+  const template = await readFile(templatePath, "utf8");
+
+  assert.match(template, /id="pdfActions"/);
+  assert.match(template, /id="questionsPdfLink"/);
+  assert.match(template, /Print Questions PDF/);
+  assert.match(template, /id="answerKeyPdfLink"/);
+  assert.match(template, /Answer Key PDF/);
+  assert.match(template, /print-quiz\.html\?quiz=/);
+  assert.match(template, /answers=1/);
+  assert.match(template, /function\s+setPdfLinks/);
+});
+
+test("print quiz page renders a JSON quiz and separates the answer key page", async () => {
+  const printTemplate = await readFile(printTemplatePath, "utf8");
+
+  assert.match(printTemplate, /fetch\s*\(/);
+  assert.match(printTemplate, /new URLSearchParams\(window\.location\.search\)/);
+  assert.match(printTemplate, /params\.get\('quiz'\)/);
+  assert.match(printTemplate, /params\.get\('answers'\)/);
+  assert.match(printTemplate, /id="questions"/);
+  assert.match(printTemplate, /id="answerKey"/);
+  assert.match(printTemplate, /answer-page/);
+  assert.match(printTemplate, /page-break-before:always/);
+  assert.match(printTemplate, /window\.print\(\)/);
+  assert.match(printTemplate, /\.answer-grid\s*{\s*display:grid;\s*grid-template-columns:repeat\(5, 1fr\)/);
+  assert.doesNotMatch(printTemplate, /\.options,\s*[\r\n]+\s*\.answer-grid\s*{/);
+  assert.doesNotMatch(printTemplate, /const\s+questions\s*=\s*\[/);
 });
 
 test("modern Canada quiz JSON has valid metadata and answer keys", async () => {
