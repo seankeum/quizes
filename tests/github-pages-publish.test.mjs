@@ -64,6 +64,14 @@ test("pages index renders available quizzes from JSON instead of hardcoded cards
   assert.doesNotMatch(pagesIndex, /href="grade4\/exercise_healthy_body_quiz\.html"/);
 });
 
+test("pages index keeps quiz cards equal height in the grid", async () => {
+  const pagesIndex = await readText("pages/index.html");
+
+  assert.match(pagesIndex, /\.quiz-list\s*{[^}]*grid-auto-rows:\s*1fr/s);
+  assert.match(pagesIndex, /\.quiz-list\s*>\s*li\s*{[^}]*display:\s*flex/s);
+  assert.match(pagesIndex, /\.quiz-link\s*{[^}]*height:\s*100%/s);
+});
+
 test("repository root redirects to the pages quiz index", async () => {
   const rootIndex = await readText("index.html");
 
