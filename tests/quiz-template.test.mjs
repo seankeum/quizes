@@ -18,17 +18,19 @@ test("quiz template loads questions from external JSON instead of hardcoding the
   assert.match(template, /modern_canada_quiz\.json/);
 });
 
-test("quiz template exposes printable PDF links for the loaded quiz", async () => {
+test("quiz template exposes one combined printable PDF link for the loaded quiz", async () => {
   const template = await readFile(templatePath, "utf8");
 
   assert.match(template, /id="pdfActions"/);
-  assert.match(template, /id="questionsPdfLink"/);
-  assert.match(template, /Print Questions PDF/);
-  assert.match(template, /id="answerKeyPdfLink"/);
-  assert.match(template, /Answer Key PDF/);
+  assert.match(template, /id="combinedPdfLink"/);
+  assert.match(template, /Print Quiz PDF/);
   assert.match(template, /print-quiz\.html\?quiz=/);
   assert.match(template, /answers=1/);
   assert.match(template, /function\s+setPdfLinks/);
+  assert.doesNotMatch(template, /id="questionsPdfLink"/);
+  assert.doesNotMatch(template, /Print Questions PDF/);
+  assert.doesNotMatch(template, /id="answerKeyPdfLink"/);
+  assert.doesNotMatch(template, /Answer Key PDF/);
 });
 
 test("print quiz page renders a JSON quiz and separates the answer key page", async () => {

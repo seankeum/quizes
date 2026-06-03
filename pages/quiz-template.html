@@ -58,10 +58,7 @@ button.option:disabled { cursor:default; }
 .pdf-link {
   display:inline-flex; align-items:center; justify-content:center; text-decoration:none;
 }
-.pdf-link.questions { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
-.pdf-link.answers {
-  background:#f8fbff; color:var(--ink); border:3px solid #d7e2f5; box-shadow:0 5px 0 #cbd5e1;
-}
+.pdf-link.combined { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
 .pdf-link:hover, .pdf-link:focus { transform:translateY(-2px); outline:none; }
 .controls button.secondary { background:#4f8cff; box-shadow:0 5px 0 #2d5fae; }
 .controls button:disabled, .start:disabled {
@@ -89,8 +86,7 @@ button.option:disabled { cursor:default; }
     <div class="intro-actions">
       <button class="start" id="startBtn" onclick="startQuiz()" disabled>Start Quiz</button>
       <div class="pdf-actions hidden" id="pdfActions" aria-label="Printable quiz exports">
-        <a class="pdf-link questions" id="questionsPdfLink" href="print-quiz.html?quiz=modern_canada_quiz.json">Print Questions PDF</a>
-        <a class="pdf-link answers" id="answerKeyPdfLink" href="print-quiz.html?quiz=modern_canada_quiz.json&answers=1">Answer Key PDF</a>
+        <a class="pdf-link combined" id="combinedPdfLink" href="print-quiz.html?quiz=modern_canada_quiz.json&answers=1">Print Quiz PDF</a>
       </div>
     </div>
   </section>
@@ -160,10 +156,8 @@ async function loadQuiz(fileName){
 
 function setPdfLinks(fileName){
   const encodedQuizFile = encodeURIComponent(fileName);
-  const questionsUrl = `print-quiz.html?quiz=${encodedQuizFile}`;
-  const answerKeyUrl = `${questionsUrl}&answers=1`;
-  document.getElementById('questionsPdfLink').href = questionsUrl;
-  document.getElementById('answerKeyPdfLink').href = answerKeyUrl;
+  const combinedUrl = `print-quiz.html?quiz=${encodedQuizFile}&answers=1`;
+  document.getElementById('combinedPdfLink').href = combinedUrl;
   document.getElementById('pdfActions').classList.remove('hidden');
 }
 
