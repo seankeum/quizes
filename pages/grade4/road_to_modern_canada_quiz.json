@@ -1,0 +1,969 @@
+{
+  "title": "Road to Modern Canada Quiz",
+  "subtitle": "80 PDF-validated multiple-choice questions from Chapters 9-11",
+  "emoji": "CA",
+  "introTitle": "Ready to review Chapters 9-11?",
+  "introText": "Choose the best answer. These questions focus on bold terms and content covered in Comprehension Check sections from the PDF.",
+  "questions": [
+    {
+      "question": "On what date did President Madison declare war in the War of 1812?",
+      "options": [
+        "July 1, 1867",
+        "June 18, 1812",
+        "December 24, 1814",
+        "April 9, 1865"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 146,
+      "sourceNote": "Comprehension Check 9.1 asks for the date President Madison declared war."
+    },
+    {
+      "question": "Which answer best explains why the United States declared war on Britain?",
+      "options": [
+        "The United States wanted to control North America, and Britain was stopping trade with France",
+        "The United States wanted to join the British Empire",
+        "Canada had already invaded Washington",
+        "Britain wanted Canada to become part of France"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 146,
+      "sourceNote": "The War of 1812 section gives control of North America and trade with France as reasons."
+    },
+    {
+      "question": "Why was the War of 1812 described as one of the most uneven wars in history?",
+      "options": [
+        "Canada had far more soldiers than the United States",
+        "Only ships fought in the war",
+        "There were about 8 million Americans but only about 300,000 Canadians and 4,000 British troops in Canada",
+        "The war lasted less than one day"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 146,
+      "sourceNote": "Comprehension Check 9.1 asks whether the war was even and why."
+    },
+    {
+      "question": "What was the American invasion plan for Canada?",
+      "options": [
+        "To attack only Nova Scotia by sea",
+        "To invade with General Hull at Fort Detroit and Van Rensselaer at Niagara",
+        "To wait until Canada joined the United States peacefully",
+        "To invade Alaska and move east"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 147,
+      "sourceNote": "Comprehension Check 9.1 asks for the U.S. invasion plan."
+    },
+    {
+      "question": "Which pair names the British general and the powerful Shawnee chief from section 9.1?",
+      "options": [
+        "John A. Macdonald and Louis Riel",
+        "William Lyon Mackenzie and Robert E. Lee",
+        "Isaac Brock and Tecumseh",
+        "Roger Sheaffe and Laura Secord"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 147,
+      "sourceNote": "Comprehension Check 9.1 asks for the British general and powerful Shawnee chief."
+    },
+    {
+      "question": "How did Brock and Tecumseh help capture Fort Detroit?",
+      "options": [
+        "They made General Hull think he faced a much larger British and Native force",
+        "They waited for Fort Detroit to run out of food for two years",
+        "They attacked only from British ships",
+        "They signed the Treaty of Ghent before the battle"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 149,
+      "sourceNote": "The Fort Detroit section says Brock and Tecumseh tricked General Hull into surrendering."
+    },
+    {
+      "question": "What happened to General Isaac Brock at the Battle of Queenston Heights?",
+      "options": [
+        "He became the first mayor of Toronto",
+        "He was shot by an American sharpshooter and died",
+        "He signed the British North America Act",
+        "He fled to the United States"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 149,
+      "sourceNote": "Comprehension Check 9.2 connects Brock's death with Queenston Heights."
+    },
+    {
+      "question": "What happened during the Burning of York?",
+      "options": [
+        "Americans looted and destroyed buildings and burned Fort York",
+        "The British burned Fort Detroit by accident",
+        "Laura Secord founded Toronto",
+        "The War of 1812 officially ended"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 150,
+      "sourceNote": "The Burning of York section describes the American attack on Fort York."
+    },
+    {
+      "question": "How did Laura Secord help at Beaver Dams?",
+      "options": [
+        "She wrote the Treaty of Ghent",
+        "She commanded General Hull's army",
+        "She ran over 30 km to warn the British about an American attack",
+        "She became the first prime minister"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 150,
+      "sourceNote": "Comprehension Check 9.2 asks how far Laura Secord ran to warn the British."
+    },
+    {
+      "question": "Which treaty officially ended the War of 1812?",
+      "options": [
+        "Treaty of Versailles",
+        "Treaty 6",
+        "Manitoba Act",
+        "Treaty of Ghent"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 151,
+      "sourceNote": "Comprehension Check 9.2 asks which treaty ended the War of 1812."
+    },
+    {
+      "question": "What did Canada gain from the War of 1812, according to the chapter?",
+      "options": [
+        "Control of all American territory",
+        "A sense of unity and a strong anti-American spirit",
+        "Immediate independence from Britain",
+        "The right to vote for women"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 151,
+      "sourceNote": "Comprehension Check 9.2 asks what Canada gained from the War of 1812."
+    },
+    {
+      "question": "The American Civil War was fought between which two sides?",
+      "options": [
+        "The Union in the north and the Confederates in the south",
+        "Canada and Britain",
+        "The Metis and the Mounties",
+        "France and Germany"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 153,
+      "sourceNote": "Comprehension Check 9.3 asks which war was fought between the northern and southern states."
+    },
+    {
+      "question": "What were the two main causes of the American Civil War listed in the chapter?",
+      "options": [
+        "Railways and whisky trading",
+        "Differences in lifestyle and slavery",
+        "Confederation and Canada Day",
+        "The Treaty of Ghent and Fort Detroit"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 153,
+      "sourceNote": "Comprehension Check 9.3 asks for the two main causes of the Civil War."
+    },
+    {
+      "question": "What is an abolitionist?",
+      "options": [
+        "A person who builds railways",
+        "A soldier in the North-West Mounted Police",
+        "A person who hated slavery and wanted it made illegal",
+        "A leader of the Family Compact"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 153,
+      "sourceNote": "Comprehension Check 9.3 asks students to define abolitionist."
+    },
+    {
+      "question": "What was the Underground Railroad?",
+      "options": [
+        "A real railway tunnel under Canada",
+        "A secret network of abolitionists helping enslaved people escape",
+        "A road from Fort Detroit to York",
+        "A train line built by the Canadian Pacific Railway"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 154,
+      "sourceNote": "Comprehension Check 9.3 asks whether the Underground Railroad was underground or a real railroad."
+    },
+    {
+      "question": "What was the goal of the Underground Railroad?",
+      "options": [
+        "To help enslaved people reach freedom in the northern states and Canada",
+        "To move Mounties to the Northwest",
+        "To help Britain invade Washington",
+        "To connect Halifax and Quebec City"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 154,
+      "sourceNote": "Comprehension Check 9.3 asks for the goal of the Underground Railroad."
+    },
+    {
+      "question": "What did the 13th Amendment do?",
+      "options": [
+        "Created the Dominion of Canada",
+        "Abolished slavery in the United States",
+        "Started the War of 1812",
+        "Created Treaty 6"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 155,
+      "sourceNote": "Comprehension Check 9.3 asks what the amendment did; the section explains it abolished slavery."
+    },
+    {
+      "question": "What is a rebel, according to section 9.4?",
+      "options": [
+        "A person who always works for the government",
+        "A person who objects to, questions, or defies existing authority",
+        "A person who builds railway tunnels",
+        "A person who donates money to the Underground Railroad"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 158,
+      "sourceNote": "Comprehension Check 9.4 asks what a rebel is."
+    },
+    {
+      "question": "Who led the Lower Canada rebellion, and what did the French-speaking reformers call themselves?",
+      "options": [
+        "Louis-Joseph Papineau and the Patriotes",
+        "William Lyon Mackenzie and the Tories",
+        "John A. Macdonald and the Mounties",
+        "Gabriel Dumont and the Nor'westers"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 158,
+      "sourceNote": "Comprehension Check 9.4 asks who led the Lower Canada rebellion."
+    },
+    {
+      "question": "Who made the important decisions in Lower Canada before the rebellion?",
+      "options": [
+        "The Blackfoot Confederacy",
+        "The Chateau Clique, mainly English-speaking colonists appointed by the governor",
+        "The Canadian Pacific Railway Company",
+        "The League of Nations"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 158,
+      "sourceNote": "Comprehension Check 9.4 asks who made the important decisions and who was in the group."
+    },
+    {
+      "question": "What document did Papineau send with the Patriotes' demands?",
+      "options": [
+        "The Manitoba Act",
+        "The Treaty of Ghent",
+        "The Ninety-Two Resolutions",
+        "The Dominion Lands Act"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 159,
+      "sourceNote": "Comprehension Check 9.4 asks for the document sent with the Patriotes' demands."
+    },
+    {
+      "question": "Where were the Patriotes finally defeated?",
+      "options": [
+        "Battle of Sainte-Eustache",
+        "Battle of Batoche",
+        "Battle of Ypres",
+        "Battle of Dieppe"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 159,
+      "sourceNote": "Comprehension Check 9.4 asks where the Patriotes were finally defeated."
+    },
+    {
+      "question": "Who led the Upper Canada Rebellion, and what group ruled Upper Canada?",
+      "options": [
+        "Louis Riel and the Metis",
+        "William Lyon Mackenzie and the Family Compact",
+        "Isaac Brock and the Chateau Clique",
+        "Benito Mussolini and the Rome-Berlin Axis"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 161,
+      "sourceNote": "Comprehension Check 9.5 asks for Mackenzie and the group that ruled Upper Canada."
+    },
+    {
+      "question": "Where was the headquarters of the Upper Canada rebels?",
+      "options": [
+        "Fort Whoop-Up",
+        "Fort Garry",
+        "Montgomery's Tavern",
+        "Juno Beach"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 162,
+      "sourceNote": "Comprehension Check 9.5 asks where the rebel headquarters was."
+    },
+    {
+      "question": "Which four colonies became the Dominion of Canada on July 1, 1867?",
+      "options": [
+        "Nova Scotia, New Brunswick, Ontario, and Quebec",
+        "Alberta, Saskatchewan, Manitoba, and British Columbia",
+        "Upper Canada, Alaska, France, and Britain",
+        "Rupert's Land, Fort Garry, York, and Detroit"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 165,
+      "sourceNote": "The Confederation section names the four colonies joined by the British North America Act."
+    },
+    {
+      "question": "What did John A. Macdonald purchase from the Hudson's Bay Company in 1869?",
+      "options": [
+        "Rupert's Land",
+        "The Rome-Berlin Axis",
+        "Fort Detroit",
+        "The League of Nations"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 167,
+      "sourceNote": "Comprehension Check 10.1 asks what Macdonald purchased from the Hudson's Bay Company."
+    },
+    {
+      "question": "When were the Northwest Territories officially created?",
+      "options": [
+        "June 18, 1812",
+        "July 15, 1870",
+        "November 7, 1885",
+        "September 10, 1939"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 167,
+      "sourceNote": "Comprehension Check 10.1 asks when the Northwest Territories were officially created."
+    },
+    {
+      "question": "What were people of both Native and European descent called?",
+      "options": [
+        "Metis",
+        "Tories",
+        "Abolitionists",
+        "Station Masters"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 167,
+      "sourceNote": "Comprehension Check 10.1 asks what people of Native and European descent were called."
+    },
+    {
+      "question": "Who led the Red River Rebellion?",
+      "options": [
+        "Sir Francis Bond Head",
+        "Louis Riel",
+        "Donald Smith",
+        "Winston Churchill"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 168,
+      "sourceNote": "Comprehension Check 10.1 asks who led the Red River Rebellion."
+    },
+    {
+      "question": "What happened after Thomas Scott was executed during the Red River Rebellion?",
+      "options": [
+        "Ontario demanded government action, Riel fled, and Manitoba was created in 1870",
+        "Canada immediately joined the League of Nations",
+        "The Treaty of Ghent was signed",
+        "The Underground Railroad began"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 168,
+      "sourceNote": "Comprehension Check 10.1 asks what happened to Thomas Scott and when Manitoba joined Confederation."
+    },
+    {
+      "question": "What was the wildest and most infamous whisky trading fort?",
+      "options": [
+        "Fort Detroit",
+        "Fort York",
+        "Fort Whoop-Up",
+        "Fort Garry"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 171,
+      "sourceNote": "Comprehension Check 10.2 asks for the wildest and most infamous whisky trading fort."
+    },
+    {
+      "question": "What colour were the Mounties' uniforms, and when were they officially established?",
+      "options": [
+        "Blue uniforms in 1867",
+        "Black uniforms in 1812",
+        "Bright red uniforms in 1873",
+        "Green uniforms in 1945"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 171,
+      "sourceNote": "Comprehension Check 10.2 asks the Mountie uniform colour and establishment year."
+    },
+    {
+      "question": "How much land could a settler receive through the Dominion Lands Act?",
+      "options": [
+        "30 acres",
+        "160 acres",
+        "600 bridges",
+        "6,000 acres"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 172,
+      "sourceNote": "Comprehension Check 10.2 asks how many acres a settler could receive."
+    },
+    {
+      "question": "What did Treaty 6 promise Native people?",
+      "options": [
+        "A railroad to Halifax",
+        "Food and medical help",
+        "Immediate citizenship for everyone",
+        "A place in the Paris Peace Conference"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 173,
+      "sourceNote": "Comprehension Check 10.2 asks what Treaty 6 promised Native people."
+    },
+    {
+      "question": "According to the chapter, did Treaty 6 recognize Native people as Canadian citizens?",
+      "options": [
+        "Yes, automatically",
+        "No, it did not recognize them as Canadian citizens",
+        "Only if they joined the Mounties",
+        "Only during World War I"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 173,
+      "sourceNote": "Comprehension Check 10.2 asks whether Native people became citizens through Treaty 6."
+    },
+    {
+      "question": "What were the Metis worried about before the Northwest Rebellion?",
+      "options": [
+        "The loss of their lands and lifestyle",
+        "The end of the War of 1812",
+        "The rise of radio shows",
+        "The Treaty of Versailles"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 175,
+      "sourceNote": "Comprehension Check 10.3 asks what the Metis were worried about."
+    },
+    {
+      "question": "Why did many Native people feel cheated by the government in the Northwest?",
+      "options": [
+        "The buffalo had disappeared, and promised food was poor quality",
+        "They were forced to fight at Queenston Heights",
+        "They were not allowed to ride trains",
+        "They had to pay for the Treaty of Ghent"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 175,
+      "sourceNote": "Comprehension Check 10.3 asks why Native people felt cheated."
+    },
+    {
+      "question": "Who convinced Louis Riel to return from the United States to help the Metis?",
+      "options": [
+        "Gabriel Dumont",
+        "John A. Macdonald",
+        "Andrew Onderdonk",
+        "Harriet Tubman"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 175,
+      "sourceNote": "Comprehension Check 10.3 asks who came back to help the Metis and identifies Dumont's role."
+    },
+    {
+      "question": "Which Cree leaders joined the Metis revolt?",
+      "options": [
+        "Poundmaker and Big Bear",
+        "Brock and Tecumseh",
+        "Mussolini and Hitler",
+        "Borden and Macdonald"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 175,
+      "sourceNote": "Comprehension Check 10.3 asks for the two Cree leaders."
+    },
+    {
+      "question": "What happened at Duck Lake?",
+      "options": [
+        "The Metis rebels attacked the Mounties, killing 12 and forcing a retreat",
+        "The Canadian Pacific Railway was completed",
+        "Women won the right to vote in Manitoba",
+        "Japan surrendered"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 176,
+      "sourceNote": "Comprehension Check 10.3 asks what happened at Duck Lake."
+    },
+    {
+      "question": "What happened to Louis Riel after the defeat at Batoche?",
+      "options": [
+        "He became first prime minister",
+        "He escaped forever to Scotland",
+        "He was tried for high treason and hanged in Regina",
+        "He wrote Uncle Tom's Cabin"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 176,
+      "sourceNote": "Comprehension Check 10.3 asks what happened to Louis Riel."
+    },
+    {
+      "question": "What was a surveyor's job for railway building?",
+      "options": [
+        "To discover the shortest and safest railway route",
+        "To teach at residential schools",
+        "To abolish slavery",
+        "To lead the Rome-Berlin Axis"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 179,
+      "sourceNote": "Comprehension Check 10.4 asks what a surveyor's job was."
+    },
+    {
+      "question": "Which railway connected Halifax to Quebec City?",
+      "options": [
+        "The Intercolonial Railway",
+        "The Underground Railroad",
+        "The Canadian Pacific Railway",
+        "The Rome-Berlin Axis"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 179,
+      "sourceNote": "Comprehension Check 10.4 asks which railway connected Halifax and Quebec City."
+    },
+    {
+      "question": "What was the greatest obstacle to completing the Canadian Pacific Railway?",
+      "options": [
+        "The Rocky Mountains",
+        "The Treaty of Ghent",
+        "The Chateau Clique",
+        "The Salvation Army"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 179,
+      "sourceNote": "Comprehension Check 10.4 asks for the greatest railway-building obstacle."
+    },
+    {
+      "question": "Where did the east and west railway construction crews meet for the Last Spike?",
+      "options": [
+        "Eagle Pass",
+        "Fort York",
+        "St. Catharines",
+        "Pearl Harbour"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 180,
+      "sourceNote": "Comprehension Check 10.4 asks where the crews met."
+    },
+    {
+      "question": "How many Chinese labourers did Andrew Onderdonk bring to Canada for railway work?",
+      "options": [
+        "300",
+        "958",
+        "6,000",
+        "625,000"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 180,
+      "sourceNote": "Comprehension Check 10.4 asks how many Chinese labourers were brought to Canada."
+    },
+    {
+      "question": "What was the main goal of residential schools?",
+      "options": [
+        "To make Indigenous children live according to white customs and beliefs",
+        "To train Mounties for Fort Whoop-Up",
+        "To build the Canadian Pacific Railway",
+        "To prepare Canada for the Paris Peace Conference"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 182,
+      "sourceNote": "Comprehension Check 10.5 asks for the main goal of residential schools."
+    },
+    {
+      "question": "What were girls and boys commonly taught at residential schools?",
+      "options": [
+        "Girls were taught laundry, sewing, cooking, and cleaning; boys were taught farming, carpentry, and maintenance",
+        "All students were trained as railway surveyors",
+        "Girls and boys were both taught only military strategy",
+        "All students were taught to lead the Family Compact"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 182,
+      "sourceNote": "Comprehension Check 10.5 asks what girls and boys were taught."
+    },
+    {
+      "question": "When was the last residential school closed?",
+      "options": [
+        "1831",
+        "1867",
+        "1916",
+        "1996"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 182,
+      "sourceNote": "Comprehension Check 10.5 asks when the last residential school closed."
+    },
+    {
+      "question": "When is National Day for Truth and Reconciliation?",
+      "options": [
+        "September 30",
+        "July 1",
+        "November 11",
+        "December 24"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 183,
+      "sourceNote": "Comprehension Check 10.5 asks for National Day for Truth and Reconciliation."
+    },
+    {
+      "question": "What was the Social Gospel?",
+      "options": [
+        "A religious movement that wanted to solve social problems through Christian principles",
+        "A railway between Halifax and Quebec City",
+        "A treaty promising food and medical help",
+        "A secret code used by slave hunters"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 185,
+      "sourceNote": "Comprehension Check 10.6 asks for the religious movement behind social reform."
+    },
+    {
+      "question": "What is suffrage?",
+      "options": [
+        "The right to vote in elections",
+        "A railway construction tunnel",
+        "A type of whisky fort",
+        "A rebellion headquarters"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 185,
+      "sourceNote": "Comprehension Check 10.6 asks what suffrage is."
+    },
+    {
+      "question": "Who was the most famous and influential person for women's suffrage in this section?",
+      "options": [
+        "Nellie McClung",
+        "Laura Secord",
+        "Harriet Tubman",
+        "Queen Victoria"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 186,
+      "sourceNote": "Comprehension Check 10.6 asks for the most famous and influential person for women's suffrage."
+    },
+    {
+      "question": "Which province was the last to allow women to vote and hold office?",
+      "options": [
+        "Manitoba",
+        "Alberta",
+        "Quebec",
+        "Nova Scotia"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 186,
+      "sourceNote": "Comprehension Check 10.6 asks which province was last to allow women to vote."
+    },
+    {
+      "question": "How did World War I begin?",
+      "options": [
+        "Archduke Franz Ferdinand was murdered by a Serbian",
+        "Japan bombed Pearl Harbour",
+        "Canada bought Rupert's Land",
+        "The Last Spike was placed"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 188,
+      "sourceNote": "Comprehension Check 11.1 asks how World War I began."
+    },
+    {
+      "question": "Why did Canada join World War I?",
+      "options": [
+        "Canada supported Britain's decision and joined the Allied forces",
+        "Canada had been invaded by Japan",
+        "Canada wanted to conquer Alaska",
+        "Canada was forced by the Treaty of Ghent"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 188,
+      "sourceNote": "Comprehension Check 11.1 asks why Canada joined the war."
+    },
+    {
+      "question": "How many Canadians went to fight in World War I between 1914 and 1918?",
+      "options": [
+        "30,000",
+        "60,000",
+        "300,000",
+        "625,000"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 188,
+      "sourceNote": "Comprehension Check 11.1 asks how many Canadians went to fight in World War I."
+    },
+    {
+      "question": "What happened at the Battle of Ypres in 1915?",
+      "options": [
+        "Canadians held the line after Germans used poison gas",
+        "Canada signed the British North America Act",
+        "Louis Riel was captured",
+        "The Last Spike was hammered into place"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 188,
+      "sourceNote": "Comprehension Check 11.1 asks about one of the worst battles Canadians fought in during World War I."
+    },
+    {
+      "question": "What is conscription?",
+      "options": [
+        "Forcing men to join the army",
+        "Donating money to escaping slaves",
+        "Making railway routes shorter",
+        "Teaching students at residential schools"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 189,
+      "sourceNote": "Comprehension Check 11.1 asks what conscription is."
+    },
+    {
+      "question": "Why did farmers, Quakers, and Mennonites oppose conscription?",
+      "options": [
+        "Farmers did not want sons taken from farms, while Quakers and Mennonites believed war was evil",
+        "They wanted Canada to join Germany",
+        "They wanted to build Fort York",
+        "They opposed radio shows"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 189,
+      "sourceNote": "Comprehension Check 11.1 asks who opposed conscription and why."
+    },
+    {
+      "question": "When did World War I end?",
+      "options": [
+        "November 11, 1918",
+        "September 1, 1939",
+        "May 7, 1945",
+        "August 10, 1945"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 189,
+      "sourceNote": "Comprehension Check 11.1 asks when World War I ended."
+    },
+    {
+      "question": "Which peacekeeping force did Canada join after World War I?",
+      "options": [
+        "League of Nations",
+        "North-West Mounted Police",
+        "Family Compact",
+        "Rome-Berlin Axis"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 189,
+      "sourceNote": "Comprehension Check 11.1 asks for the peacekeeping force Canada joined."
+    },
+    {
+      "question": "Who wrote In Flanders Fields?",
+      "options": [
+        "John McCrae",
+        "John A. Macdonald",
+        "William Booth",
+        "Andrew Onderdonk"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 190,
+      "sourceNote": "Comprehension Check 11.1 asks for the poem and its writer."
+    },
+    {
+      "question": "What do historians call the 1920s?",
+      "options": [
+        "The Roaring Twenties",
+        "The Quiet Decade",
+        "The War of 1812",
+        "Victory in Europe"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 191,
+      "sourceNote": "Comprehension Check 11.2 asks what historians call the 1920s."
+    },
+    {
+      "question": "What was the Great Depression?",
+      "options": [
+        "A severe economic decline after the New York Stock Market Crash",
+        "A military alliance between Italy and Germany",
+        "A railway pass through the Rocky Mountains",
+        "A treaty that ended the War of 1812"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 191,
+      "sourceNote": "Comprehension Check 11.2 asks what the Great Depression was."
+    },
+    {
+      "question": "What percent of the population did not have jobs by 1933?",
+      "options": [
+        "5%",
+        "10%",
+        "30%",
+        "75%"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 191,
+      "sourceNote": "Comprehension Check 11.2 asks what percent of the population did not have jobs."
+    },
+    {
+      "question": "What did Alberta and Saskatchewan suffer from during the Great Depression?",
+      "options": [
+        "A severe drought that led to crop failure",
+        "A German invasion",
+        "The Burning of York",
+        "A raid on Dieppe"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 191,
+      "sourceNote": "Comprehension Check 11.2 asks what Alberta and Saskatchewan suffered from."
+    },
+    {
+      "question": "Which two famous Canadian companies were started during the Great Depression?",
+      "options": [
+        "CBC and Trans-Canada Airline",
+        "Hudson's Bay Company and Northwest Company",
+        "Canadian Pacific Railway and Intercolonial Railway",
+        "Salvation Army and League of Nations"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 192,
+      "sourceNote": "Comprehension Check 11.2 asks which famous Canadian companies started in the 1930s."
+    },
+    {
+      "question": "Who was the leader of Italy before World War II?",
+      "options": [
+        "Benito Mussolini",
+        "Adolf Hitler",
+        "Joseph Stalin",
+        "Winston Churchill"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 194,
+      "sourceNote": "Comprehension Check 11.3 asks who led Italy."
+    },
+    {
+      "question": "What was the purpose of the Treaty of Versailles, according to the chapter?",
+      "options": [
+        "To prevent Germany from ever starting another war",
+        "To create the Dominion of Canada",
+        "To end the Red River Rebellion",
+        "To give women the right to vote"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 194,
+      "sourceNote": "Comprehension Check 11.3 asks for the purpose of the Treaty of Versailles."
+    },
+    {
+      "question": "Who became the dictator of Germany?",
+      "options": [
+        "Adolf Hitler",
+        "Benito Mussolini",
+        "Robert Borden",
+        "Theodore Roosevelt"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 194,
+      "sourceNote": "Comprehension Check 11.3 asks who led Germany."
+    },
+    {
+      "question": "What area did Hitler march his soldiers back into in 1936, breaking the Treaty of Versailles?",
+      "options": [
+        "The Rhineland",
+        "Rupert's Land",
+        "Queenston Heights",
+        "Juno Beach"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 194,
+      "sourceNote": "Comprehension Check 11.3 asks which area Germany marched soldiers back into."
+    },
+    {
+      "question": "Who was part of the Rome-Berlin Axis?",
+      "options": [
+        "Germany and Italy",
+        "Canada and Britain",
+        "The Union and Confederates",
+        "Ontario and Quebec"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 195,
+      "sourceNote": "Comprehension Check 11.3 asks who was part of the Rome-Berlin Axis."
+    },
+    {
+      "question": "After Germany invaded which country did Britain and France declare war on Germany?",
+      "options": [
+        "Poland",
+        "Canada",
+        "Japan",
+        "Norway"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 195,
+      "sourceNote": "Comprehension Check 11.3 asks what country Germany invaded before Britain and France declared war."
+    },
+    {
+      "question": "When did Canada officially declare war in World War II?",
+      "options": [
+        "September 10, 1939",
+        "December 7, 1941",
+        "June 6, 1944",
+        "August 10, 1945"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 195,
+      "sourceNote": "Comprehension Check 11.3 asks when Canada officially declared war."
+    },
+    {
+      "question": "In which battle were 907 Canadian soldiers killed, more than 500 wounded, and almost 2,000 captured?",
+      "options": [
+        "Battle of Dieppe",
+        "Battle of Batoche",
+        "Battle of Queenston Heights",
+        "Battle of Beaver Dams"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 195,
+      "sourceNote": "Comprehension Check 11.3 asks for the battle with these Canadian losses."
+    },
+    {
+      "question": "What place did Japanese warplanes bomb on December 7, 1941?",
+      "options": [
+        "Pearl Harbour",
+        "Fort York",
+        "Eagle Pass",
+        "Sainte-Eustache"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 196,
+      "sourceNote": "Comprehension Check 11.3 asks what place Japan bombed on December 7, 1941."
+    },
+    {
+      "question": "What was Operation D-Day?",
+      "options": [
+        "The Allied invasion to take back Europe from Germany",
+        "The signing of the British North America Act",
+        "The first National Day for Truth and Reconciliation",
+        "The founding of the Salvation Army"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 196,
+      "sourceNote": "Comprehension Check 11.3 asks for the Allied invasion to take back Europe."
+    },
+    {
+      "question": "What is VE Day?",
+      "options": [
+        "Victory in Europe Day",
+        "Victory over Japan Day",
+        "Vimy Expedition Day",
+        "Volunteer Enlistment Day"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 196,
+      "sourceNote": "Comprehension Check 11.3 asks what VE Day is."
+    },
+    {
+      "question": "Which two Japanese cities were attacked with atomic bombs by the United States?",
+      "options": [
+        "Hiroshima and Nagasaki",
+        "Tokyo and Kyoto",
+        "Pearl Harbour and Hong Kong",
+        "Juno and Dieppe"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 197,
+      "sourceNote": "Comprehension Check 11.3 asks which two Japanese cities were attacked."
+    }
+  ]
+}

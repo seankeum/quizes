@@ -7,6 +7,8 @@ const printTemplatePath = new URL("../pages/print-quiz.html", import.meta.url);
 const quizPath = new URL("../pages/grade4/modern_canada_quiz.json", import.meta.url);
 const healthQuizPath = new URL("../pages/grade4/exercise_healthy_body_quiz.json", import.meta.url);
 const healthQuizShimPath = new URL("../pages/grade4/exercise_healthy_body_quiz.html", import.meta.url);
+const roadToModernCanadaQuizPath = new URL("../pages/grade4/road_to_modern_canada_quiz.json", import.meta.url);
+const roadToModernCanadaQuizShimPath = new URL("../pages/grade4/road_to_modern_canada_quiz.html", import.meta.url);
 const indexPath = new URL("../pages/index.html", import.meta.url);
 const quizIndexPath = new URL("../pages/quizzes.json", import.meta.url);
 
@@ -106,5 +108,44 @@ test("exercise for a healthy body quiz is linked and has PDF-validated answer ke
       section.quizzes.some((item) => item.href === "grade4/exercise_healthy_body_quiz.html")
     ),
     "quiz index links the exercise for a healthy body quiz",
+  );
+});
+
+test("road to modern Canada quiz covers chapters 9 through 11 with PDF source metadata", async () => {
+  const [quiz, shim, quizIndex] = await Promise.all([
+    readFile(roadToModernCanadaQuizPath, "utf8").then(JSON.parse),
+    readFile(roadToModernCanadaQuizShimPath, "utf8"),
+    readFile(quizIndexPath, "utf8").then(JSON.parse),
+  ]);
+
+  assert.equal(quiz.title, "Road to Modern Canada Quiz");
+  assert.equal(typeof quiz.subtitle, "string");
+  assert.match(quiz.subtitle, /80 PDF-validated/);
+  assert.match(quiz.introText, /bold terms/i);
+  assert.match(quiz.introText, /Comprehension Check/);
+  assert.equal(Array.isArray(quiz.questions), true);
+  assert.equal(quiz.questions.length, 80);
+
+  for (const [index, question] of quiz.questions.entries()) {
+    assert.equal(typeof question.question, "string", `question ${index + 1} text`);
+    assert.ok(question.question.length > 0, `question ${index + 1} text is nonempty`);
+    assert.equal(Array.isArray(question.options), true, `question ${index + 1} options`);
+    assert.equal(question.options.length, 4, `question ${index + 1} option count`);
+    assert.equal(Number.isInteger(question.answer), true, `question ${index + 1} answer index`);
+    assert.ok(question.answer >= 0, `question ${index + 1} answer lower bound`);
+    assert.ok(question.answer < question.options.length, `question ${index + 1} answer upper bound`);
+    assert.equal(typeof question.sourcePrintedPage, "number", `question ${index + 1} source page`);
+    assert.ok(question.sourcePrintedPage >= 146, `question ${index + 1} source page lower bound`);
+    assert.ok(question.sourcePrintedPage <= 199, `question ${index + 1} source page upper bound`);
+    assert.equal(typeof question.sourceNote, "string", `question ${index + 1} source note`);
+    assert.ok(question.sourceNote.length > 0, `question ${index + 1} source note is nonempty`);
+  }
+
+  assert.match(shim, /quiz-template\.html\?quiz=grade4\/road_to_modern_canada_quiz\.json/);
+  assert.ok(
+    quizIndex.sections.some((section) =>
+      section.quizzes.some((item) => item.href === "grade4/road_to_modern_canada_quiz.html")
+    ),
+    "quiz index links the road to modern Canada quiz",
   );
 });
