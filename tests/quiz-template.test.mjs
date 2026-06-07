@@ -149,3 +149,25 @@ test("road to modern Canada quiz covers chapters 9 through 11 with PDF source me
     "quiz index links the road to modern Canada quiz",
   );
 });
+
+test("road to modern Canada quiz has random-looking, fairly distributed printable answer keys", async () => {
+  const quiz = JSON.parse(await readFile(roadToModernCanadaQuizPath, "utf8"));
+  const answerKeys = quiz.questions.map((question) => question.answer);
+  const answerKeyCounts = answerKeys.reduce(
+    (counts, question) => {
+      counts[question] += 1;
+      return counts;
+    },
+    [0, 0, 0, 0],
+  );
+  const idealCount = quiz.questions.length / 4;
+  const minCount = Math.ceil(idealCount * 0.85);
+  const maxCount = Math.floor(idealCount * 1.15);
+  const isCycled = answerKeys.every((answer, index) => answer === index % 4);
+
+  for (const count of answerKeyCounts) {
+    assert.ok(count >= minCount, `answer key count ${count} is below ${minCount}`);
+    assert.ok(count <= maxCount, `answer key count ${count} is above ${maxCount}`);
+  }
+  assert.equal(isCycled, false, "answer keys should not repeat A, B, C, D in order");
+});
