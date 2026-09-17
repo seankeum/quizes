@@ -1,0 +1,609 @@
+{
+  "title": "Science Investigation Quiz",
+  "subtitle": "50 multiple-choice questions from Chapter 1",
+  "emoji": "🔬📊🧪",
+  "introTitle": "Ready to investigate?",
+  "introText": "Review science, the scientific method, experiments, graphs, laboratory tools, and safety. Choose the best answer to each question.",
+  "questions": [
+    {
+      "question": "What does it mean to investigate something?",
+      "options": [
+        "Change facts to match an idea",
+        "Copy an answer without checking",
+        "Look closely to learn facts",
+        "Guess without looking"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 2,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 2."
+    },
+    {
+      "question": "Which example shows technology?",
+      "options": [
+        "Watching clouds change shape",
+        "Noticing that a leaf is green",
+        "Asking why the sky is blue",
+        "Using a wheel to move a cart"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 2,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 2."
+    },
+    {
+      "question": "Which list names the three main branches of natural science?",
+      "options": [
+        "Astronomy, meteorology, and geology",
+        "Botany, zoology, and anatomy",
+        "Earth science, life science, and physical science",
+        "Chemistry, physics, and mathematics"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 5,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 5."
+    },
+    {
+      "question": "Which branch of science studies living things?",
+      "options": [
+        "Life science",
+        "Astronomy",
+        "Physical science",
+        "Earth science"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 5,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 5."
+    },
+    {
+      "question": "Which branch studies Earth, its atmosphere, and outer space?",
+      "options": [
+        "Botany",
+        "Life science",
+        "Earth science",
+        "Anatomy"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 5,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 5."
+    },
+    {
+      "question": "What does physical science study?",
+      "options": [
+        "Only weather and clouds",
+        "Matter, energy, and their physical properties",
+        "Only the parts of the human body",
+        "Only plants and animals"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 5,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 5."
+    },
+    {
+      "question": "What did Copernicus conclude about Earth and the other planets?",
+      "options": [
+        "They do not move",
+        "They all orbit Earth",
+        "They orbit the Sun",
+        "They all orbit the Moon"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 3,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 3."
+    },
+    {
+      "question": "Which activity belongs to the first step of the scientific method?",
+      "options": [
+        "Decide that a hypothesis is correct",
+        "Share results before collecting data",
+        "Observe, ask questions, and research",
+        "Write a final conclusion"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 3,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 3."
+    },
+    {
+      "question": "What is a hypothesis?",
+      "options": [
+        "A tool for measuring time",
+        "A reasonable prediction that can be tested",
+        "A collection of measurements",
+        "A final decision based on results"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 4,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 4."
+    },
+    {
+      "question": "Why should a scientist research before forming a hypothesis?",
+      "options": [
+        "To base the prediction on useful information",
+        "To guarantee the prediction is correct",
+        "To avoid ever doing an experiment",
+        "To replace all observations with guesses"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "In the hypothesis \"If I give a plant more sunlight, then it will grow taller,\" what is the predicted effect?",
+      "options": [
+        "The plant is placed in a pot",
+        "The plant will grow taller",
+        "The plant receives less water",
+        "The plant receives more sunlight"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 4,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 4."
+    },
+    {
+      "question": "What should a scientist do after forming a hypothesis?",
+      "options": [
+        "Ignore observations that disagree",
+        "Declare the prediction a scientific law",
+        "Write results without testing",
+        "Plan an experiment and collect data"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 4,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 4."
+    },
+    {
+      "question": "Which example is data collected during an experiment?",
+      "options": [
+        "A record of plant heights measured each week",
+        "A question about what might happen",
+        "A guess made before any observation",
+        "A plan for buying supplies"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 4,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 4."
+    },
+    {
+      "question": "Which question is open-ended?",
+      "options": [
+        "Is this plant green?",
+        "Is the pot made of clay?",
+        "Did you water the plant today?",
+        "How does the amount of water affect plant growth?"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "What is the independent variable in a fair experiment?",
+      "options": [
+        "The result measured",
+        "The factor deliberately changed",
+        "The final conclusion",
+        "A factor kept the same"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "What is a dependent variable?",
+      "options": [
+        "A factor measured or observed",
+        "The factor deliberately changed",
+        "A factor that must stay the same",
+        "A prediction made before testing"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "What is another name for controlled variables?",
+      "options": [
+        "Constants",
+        "Predictions",
+        "Conclusions",
+        "Experimental groups"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "Why should only one factor be changed at a time in a fair experiment?",
+      "options": [
+        "To avoid measuring the results",
+        "To help identify what caused the results",
+        "To make every prediction correct",
+        "To make the control group unnecessary"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "What is the main purpose of a control group?",
+      "options": [
+        "To guarantee the expected result",
+        "To receive every possible change",
+        "To replace the experimental groups",
+        "To provide a standard for comparison"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 9,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 9."
+    },
+    {
+      "question": "Which group tests the changed factor?",
+      "options": [
+        "The experimental group",
+        "The research team",
+        "The control group",
+        "The audience"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 9,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 9."
+    },
+    {
+      "question": "A student gives similar plants different amounts of water. What is the independent variable?",
+      "options": [
+        "The kind of plant kept the same",
+        "The amount of water",
+        "The size of the identical pots",
+        "The height measured afterward"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "A student measures how tall each plant grows after changing the amount of water. What is the dependent variable?",
+      "options": [
+        "Amount of water supplied",
+        "Type of soil kept the same",
+        "Size of the identical pots",
+        "Plant height"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "When testing how water amounts affect plant growth, which factors should stay the same?",
+      "options": [
+        "Plant type, soil, and sunlight",
+        "The conclusion and the prediction",
+        "Water amount, plant height, and results",
+        "Plant height only"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 8,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 8."
+    },
+    {
+      "question": "In the chapter's toy-car experiment, which car is the control group?",
+      "options": [
+        "The car with tungsten weights",
+        "The car with steel weights",
+        "The car without added weights",
+        "Whichever car finishes first"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 9,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 9."
+    },
+    {
+      "question": "Why do scientists repeat an experiment?",
+      "options": [
+        "To check whether the results are consistent",
+        "To avoid keeping records",
+        "To change every variable at once",
+        "To make an incorrect result become correct"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 10,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 10."
+    },
+    {
+      "question": "A toy car takes 6, 7, and 8 seconds to finish three runs. What is its average time?",
+      "options": [
+        "7 seconds",
+        "21 seconds",
+        "6 seconds",
+        "8 seconds"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 10,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 10."
+    },
+    {
+      "question": "Why do scientists use standard units of measurement?",
+      "options": [
+        "So every experiment has the same result",
+        "So people can understand and compare shared data",
+        "So they can avoid writing down numbers",
+        "So measuring tools are unnecessary"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "What is a concept map?",
+      "options": [
+        "A tool for measuring temperature",
+        "A table, diagram, or chart that organizes information visually",
+        "A prediction about an experiment",
+        "A list of laboratory safety rules only"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "Which display best organizes the color, size, and texture of several rocks?",
+      "options": [
+        "A stopwatch",
+        "A circle graph of one total",
+        "An information table",
+        "A compass"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "Which diagram best compares similarities and differences between two animals?",
+      "options": [
+        "A circle graph",
+        "A Venn diagram",
+        "A line graph",
+        "A flow chart"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "What does a tree chart show?",
+      "options": [
+        "Only fractions of one whole",
+        "How supporting ideas connect to main ideas",
+        "How many seconds an event lasts",
+        "Only changes in temperature over time"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "Which chart best shows the steps of a process in order?",
+      "options": [
+        "A Venn diagram",
+        "A circle graph",
+        "A bar graph",
+        "A flow chart"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 12,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 12."
+    },
+    {
+      "question": "What does a sector of a circle graph represent?",
+      "options": [
+        "A part of the whole",
+        "The time an experiment ends",
+        "The space between numbered lines",
+        "A separate experiment every time"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 14,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 14."
+    },
+    {
+      "question": "Which graph is best for comparing the number of books read by four students?",
+      "options": [
+        "A flow chart",
+        "A Venn diagram",
+        "A bar graph",
+        "A tree chart"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 14,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 14."
+    },
+    {
+      "question": "Which graph is best for showing temperature changes over a week?",
+      "options": [
+        "A Venn diagram",
+        "A line graph",
+        "A circle graph",
+        "A tree chart"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 14,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 14."
+    },
+    {
+      "question": "A graph has numbered lines labeled 0, 10, 20, 30, and 40. What is its interval?",
+      "options": [
+        "20",
+        "10",
+        "5",
+        "40"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 14,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 14."
+    },
+    {
+      "question": "A plant grows taller every week. What trend would a graph of its height show?",
+      "options": [
+        "An upward trend",
+        "A downward trend",
+        "No change",
+        "A decrease followed by a decrease"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 14,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 14."
+    },
+    {
+      "question": "What should a scientific conclusion be based on?",
+      "options": [
+        "The result the scientist wanted",
+        "Evidence collected during the investigation",
+        "The most popular guess",
+        "The first idea that came to mind"
+      ],
+      "answer": 1,
+      "sourcePrintedPage": 16,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 16."
+    },
+    {
+      "question": "What does inconclusive mean?",
+      "options": [
+        "The hypothesis is definitely correct",
+        "The experiment needs no more work",
+        "Every measurement is exactly the same",
+        "There is not enough clear evidence to reach a conclusion"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 16,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 16."
+    },
+    {
+      "question": "Repeated results do not support a hypothesis. What should the scientist do?",
+      "options": [
+        "Change the recorded results",
+        "Declare the original prediction correct",
+        "Keep only the results that fit the prediction",
+        "Review the evidence and form a new hypothesis to test"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 16,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 16."
+    },
+    {
+      "question": "Which statement correctly compares scientific laws and theories?",
+      "options": [
+        "Laws are guesses; theories are lists of equipment",
+        "Laws are laboratory rules; theories are measuring tools",
+        "Laws and theories both describe only living things",
+        "Laws describe patterns in nature; theories explain why they occur"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 17,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 17."
+    },
+    {
+      "question": "Why do scientists share their results?",
+      "options": [
+        "So every scientist must agree",
+        "So they can replace evidence with opinions",
+        "So nobody needs to repeat experiments",
+        "So others can compare data and test their ideas"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 17,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 17."
+    },
+    {
+      "question": "Which instrument measures water temperature?",
+      "options": [
+        "A stopwatch",
+        "A compass",
+        "A thermometer",
+        "A scale"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 20,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 20."
+    },
+    {
+      "question": "Which instrument would you use to compare the masses of two objects?",
+      "options": [
+        "A thermometer",
+        "A timer",
+        "A scale",
+        "A hand lens"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 20,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 20."
+    },
+    {
+      "question": "Which tool helps you examine cells too small to see with your eyes alone?",
+      "options": [
+        "A microscope",
+        "A compass",
+        "A telescope",
+        "Binoculars"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 21,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 21."
+    },
+    {
+      "question": "How does a timer differ from a stopwatch?",
+      "options": [
+        "A timer measures mass; a stopwatch measures temperature",
+        "A timer counts up; a stopwatch counts down",
+        "A timer counts down; a stopwatch counts up",
+        "A timer shows direction; a stopwatch magnifies objects"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 21,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 21."
+    },
+    {
+      "question": "Which tool helps prevent spills when pouring liquid into a narrow opening?",
+      "options": [
+        "A funnel",
+        "A hand lens",
+        "A scale",
+        "A strainer"
+      ],
+      "answer": 0,
+      "sourcePrintedPage": 21,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 21."
+    },
+    {
+      "question": "Which tool would best separate large pebbles from fine sand?",
+      "options": [
+        "An eyedropper",
+        "A thermometer",
+        "A flask",
+        "A strainer"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 21,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 21."
+    },
+    {
+      "question": "You find a cracked glass container in the laboratory. What should you do?",
+      "options": [
+        "Cover the crack with your hand",
+        "Hide it behind other equipment",
+        "Tell an adult and do not use it",
+        "Use it carefully without telling anyone"
+      ],
+      "answer": 2,
+      "sourcePrintedPage": 22,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 22."
+    },
+    {
+      "question": "Which student is following laboratory safety rules?",
+      "options": [
+        "A student running while carrying a flask",
+        "A student tasting an unknown liquid",
+        "A student pouring leftover chemicals down the drain",
+        "A student wearing goggles and closed-toe shoes with long hair tied back"
+      ],
+      "answer": 3,
+      "sourcePrintedPage": 22,
+      "sourceNote": "Based on the supplied Science Investigation chapter, printed page 22."
+    }
+  ]
+}
