@@ -24,6 +24,16 @@
           "href": "grade4/science_investigation_quiz.html"
         }
       ]
+    },
+    {
+      "heading": "Grade 5",
+      "quizzes": [
+        {
+          "title": "History and Geography Keyword Quiz",
+          "meta": "30 multiple-choice questions focused on textbook keywords",
+          "href": "grade5/history_geography_keywords_quiz.html"
+        }
+      ]
     }
   ]
 }

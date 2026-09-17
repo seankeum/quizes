@@ -1,0 +1,309 @@
+{
+  "title": "History and Geography Keyword Quiz",
+  "subtitle": "30 Grade 5 multiple-choice questions",
+  "emoji": "🌍 📚 🏛️",
+  "introTitle": "Know your keywords?",
+  "introText": "Practice history, geography, government, and ancient Asia vocabulary from your textbook pages. Choose an answer, get instant feedback, and see your score at the end.",
+  "questions": [
+    {
+      "question": "Which word means a written record of what people have done in the past?",
+      "options": [
+        "Geography",
+        "History",
+        "Government",
+        "Culture"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "What is the study of Earth’s surface, climate, countries, people, and cultures?",
+      "options": [
+        "Archaeology",
+        "History",
+        "Government",
+        "Geography"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which word means studying ancient people by finding and examining remains from the past?",
+      "options": [
+        "Archaeology",
+        "Geography",
+        "Democracy",
+        "Culture"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What do we call a scientist who studies the past through excavations and artifacts?",
+      "options": [
+        "Representative",
+        "Prime minister",
+        "Archaeologist",
+        "Dictator"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Old tools, pottery, and coins made or used by people are examples of which keyword?",
+      "options": [
+        "Nations",
+        "Artifacts",
+        "Governments",
+        "Languages"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A diary written by someone who witnessed an event is what kind of source?",
+      "options": [
+        "Primary source",
+        "Secondary source",
+        "Tertiary source",
+        "None of these"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "A writer uses an eyewitness’s diary to retell an event. What kind of source is the writer’s account?",
+      "options": [
+        "Artifact",
+        "Primary source",
+        "Tertiary source",
+        "Secondary source"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "According to the textbook, a document that uses secondary sources to summarize information is a:",
+      "options": [
+        "Primary source",
+        "Personal diary",
+        "Tertiary source",
+        "Firsthand account"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which abbreviation labels years before the birth of Christ?",
+      "options": [
+        "B.C.",
+        "A.D.",
+        "A.M.",
+        "P.M."
+      ],
+      "answer": 0
+    },
+    {
+      "question": "According to the textbook, which worldview understands life through the teachings of the Bible?",
+      "options": [
+        "Geographic worldview",
+        "Political worldview",
+        "Biblical worldview",
+        "Evolutionary worldview"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which keyword names the use of words to communicate with others?",
+      "options": [
+        "Government",
+        "Progress",
+        "Geography",
+        "Language"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "A group’s food, clothing, religion, art, and traditions are parts of its:",
+      "options": [
+        "Country",
+        "Culture",
+        "Climate",
+        "Landscape"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which keyword means a system of authority that governs people and enforces laws?",
+      "options": [
+        "Culture",
+        "Geography",
+        "Government",
+        "Archaeology"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which word describes a large group of people united under the same ruler and general laws?",
+      "options": [
+        "Nation",
+        "Country",
+        "Continent",
+        "Council"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "What is the land where a nation lives called?",
+      "options": [
+        "Culture",
+        "Government",
+        "Civilization",
+        "Country"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "According to the textbook, which form of government is ruled by a chief?",
+      "options": [
+        "Republic",
+        "Tribal government",
+        "Constitutional monarchy",
+        "Theocracy"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A ruler inherits the throne, makes and enforces laws, and holds complete power. Which government does this describe?",
+      "options": [
+        "Absolute monarchy",
+        "Constitutional monarchy",
+        "Democracy",
+        "Republic"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which government is ruled by a leader who may take power by force and take away people’s freedoms?",
+      "options": [
+        "Republic",
+        "Democracy",
+        "Constitutional monarchy",
+        "Dictatorship"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which keyword means government ruled by religious authority?",
+      "options": [
+        "Democracy",
+        "Theocracy",
+        "Republic",
+        "Absolute monarchy"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "A country has a king or queen, but a prime minister and parliament hold most governing power. What is this called?",
+      "options": [
+        "Dictatorship",
+        "Tribal government",
+        "Constitutional monarchy",
+        "Absolute monarchy"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which government does the textbook describe as having laws decided by the voting majority?",
+      "options": [
+        "Theocracy",
+        "Dictatorship",
+        "Absolute monarchy",
+        "Democracy"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Which government does the textbook define as being run by representatives of the people?",
+      "options": [
+        "Republic",
+        "Theocracy",
+        "Tribal government",
+        "Absolute monarchy"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which region is a long, curved strip of rich farmland in western Asia, also called the Cradle of Civilization?",
+      "options": [
+        "Oceania",
+        "Antarctica",
+        "Fertile Crescent",
+        "Persian Gulf"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Which name means “between the rivers” and refers to land between the Tigris and Euphrates?",
+      "options": [
+        "Canaan",
+        "Mesopotamia",
+        "Arabia",
+        "Europe"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "According to the textbook, which river’s name means “arrow”?",
+      "options": [
+        "Euphrates",
+        "Pison",
+        "Gihon",
+        "Tigris"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "According to the textbook, which river’s name means “that which makes fruitful”?",
+      "options": [
+        "Euphrates",
+        "Tigris",
+        "Pison",
+        "Gihon"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Which keyword means a group of people who share a culture?",
+      "options": [
+        "Country",
+        "Civilization",
+        "Continent",
+        "Government"
+      ],
+      "answer": 1
+    },
+    {
+      "question": "Which name does the textbook use for the island nations of the Pacific?",
+      "options": [
+        "Mesopotamia",
+        "Arabia",
+        "Oceania",
+        "Canaan"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Early civilizations used rivers to move people and goods. Which keyword describes this use?",
+      "options": [
+        "Transportation",
+        "Excavation",
+        "Communication",
+        "Government"
+      ],
+      "answer": 0
+    },
+    {
+      "question": "Into which body of water do the Tigris and Euphrates Rivers empty?",
+      "options": [
+        "Mediterranean Sea",
+        "Red Sea",
+        "Pacific Ocean",
+        "Persian Gulf"
+      ],
+      "answer": 3
+    }
+  ]
+}
